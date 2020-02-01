@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Date;
 
-@Table(name = "myemployees")
+@Table(name = "userA")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -114,4 +114,5 @@ public class User {
                 ", updated=" + updated +
                 '}';
     }
+
 }
