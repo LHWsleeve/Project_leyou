@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/itcat_sringboot/pom.xml" />
+        <option value="$PROJECT_DIR$/itcast-user/pom.xml" />
       </list>
     </option>
   </component>
