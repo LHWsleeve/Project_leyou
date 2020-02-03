@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/http-demo/http-demo.iml" filepath="$PROJECT_DIR$/http-demo/http-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itcast-eureka/itcast-eureka.iml" filepath="$PROJECT_DIR$/itcast-eureka/itcast-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/itcast-service-consumer/itcast-service-consumer.iml" filepath="$PROJECT_DIR$/itcast-service-consumer/itcast-service-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/itcast-service-provider/itcast-service-provider.iml" filepath="$PROJECT_DIR$/itcast-service-provider/itcast-service-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/itcast-user/itcast-user.iml" filepath="$PROJECT_DIR$/itcast-user/itcast-user.iml" />

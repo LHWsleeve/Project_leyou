@@ -1,0 +1,11 @@
+server:
+  port: 11000
+
+spring:
+  application:
+    name: itcast-eureka #将来会作为服务id货服务名注册到eureka注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:11000/eureka
+
