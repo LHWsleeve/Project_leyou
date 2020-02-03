@@ -8,11 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="http-demo" />
         <module name="itcat_sringboot" />
+        <module name="itcast-service-provider" />
+        <module name="itcast-service-consumer" />
         <module name="itcast-user" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="http-demo" target="1.8" />
+      <module name="itcast-service-consumer" target="1.8" />
+      <module name="itcast-service-provider" target="1.8" />
       <module name="itcast-user" target="1.8" />
       <module name="itcat_sringboot" target="1.8" />
     </bytecodeTargetLevel>
@@ -20,6 +24,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="http-demo" options="-parameters" />
+      <module name="itcast-service-consumer" options="-parameters" />
+      <module name="itcast-service-provider" options="-parameters" />
       <module name="itcast-user" options="-parameters" />
       <module name="itcat_sringboot" options="-parameters" />
     </option>
