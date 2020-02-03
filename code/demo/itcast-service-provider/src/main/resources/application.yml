@@ -4,7 +4,13 @@ spring:
     url: jdbc:mysql://localhost:3306/user?characterEncoding=utf8&useSSL=false
     username: root
     password: 123456
+  application:
+    name: service-provider
 mybatis:
   type-aliases-package: cn.itcast.service.pojo
 server:
   port: 10001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:11000/eureka
