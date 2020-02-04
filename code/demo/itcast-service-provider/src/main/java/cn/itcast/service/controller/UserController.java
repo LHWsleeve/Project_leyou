@@ -18,7 +18,8 @@ public class UserController {
     @GetMapping("{id}")
     public User querById(@PathVariable("id") Integer id) throws InterruptedException {
         //模拟响应超时
-        Thread.sleep(20000);
+//        Thread.sleep(20000);
+
         return this.userService.querById(id);
     }
 }

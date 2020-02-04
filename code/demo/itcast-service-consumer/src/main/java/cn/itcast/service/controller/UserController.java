@@ -33,6 +33,9 @@ public class UserController {
 //        return this.restTemplate.getForObject("http://"+serviceInstance.getHost()+":"+serviceInstance.getPort()+"/user/"+id,User.class);
         //由ribbon决定调用那个服务器（地址和端口），通过服务名称获取列表，不能使用固定端口。
 
+        if (id==1){
+            throw new RuntimeException();
+        }
         return this.restTemplate.getForObject("http://service-provider/user/"+id,String.class);
     }
 
@@ -40,4 +43,5 @@ public class UserController {
     public String querUserByIdFallback(Integer id){
         return "服务器正忙";
     }
+
 }
