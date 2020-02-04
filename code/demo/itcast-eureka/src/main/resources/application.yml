@@ -1,5 +1,5 @@
 server:
-  port: 11001
+  port: 11000
 
 spring:
   application:
@@ -8,4 +8,5 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:11000/eureka
-
+    healthcheck:
+      enabled: true

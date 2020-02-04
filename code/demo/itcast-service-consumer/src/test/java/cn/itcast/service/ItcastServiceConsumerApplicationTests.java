@@ -1,13 +1,26 @@
 package cn.itcast.service;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient;
+import org.springframework.test.context.junit4.SpringRunner;
 
-@SpringBootTest
-class ItcastServiceConsumerApplicationTests {
+@SpringBootTest(classes = ItcastServiceConsumerApplication.class)
+@RunWith(SpringRunner.class)
+public class ItcastServiceConsumerApplicationTests {
+
+    @Autowired
+    private RibbonLoadBalancerClient client;
 
     @Test
-    void contextLoads() {
+    public void test(){
+        for (int i = 0; i <50 ; i++) {
+            ServiceInstance instance = this.client.choose("service-provider");
+            System.out.println(instance.getHost()+":"+instance.getPort());
+        }
     }
 
 }

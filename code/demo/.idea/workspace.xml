@@ -74,7 +74,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ItcastEurekaApplication">
+  <component name="RunManager" selected="JUnit.ItcastServiceConsumerApplicationTests.test">
     <configuration name="HttpDemoApplicationTests.httpGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="http-demo" />
       <extension name="coverage">
@@ -123,17 +123,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="http-demo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.httpdemo.HttpDemoApplication" />
+    <configuration name="ItcastServiceConsumerApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="itcast-service-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itcast.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.itcast.service" />
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.service.ItcastServiceConsumerApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItcastEurekaApplication 2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="itcast-eureka" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.eureka.ItcastEurekaApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration name="ItcastServiceConsumerApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="itcast-service-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itcast.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.itcast.service" />
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.service.ItcastServiceConsumerApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="http-demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.httpdemo.HttpDemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,35 +175,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ItcastServiceProviderApplication 2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="itcast-service-provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.service.ItcastServiceProviderApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ItcastServiceProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="itcast-service-provider" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.service.ItcastServiceProviderApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="itcat_sringboot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.itcast.springboot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.springboot.TestApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="itcast-user" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.itcast.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.user.UserApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,21 +194,21 @@
       <item itemvalue="JUnit.HttpDemoApplicationTests.httpGet" />
       <item itemvalue="JUnit.HttpTests.testGet" />
       <item itemvalue="JUnit.HttpTests.testPost" />
+      <item itemvalue="Spring Boot.ItcastServiceConsumerApplication" />
       <item itemvalue="Spring Boot.ItcastServiceProviderApplication" />
       <item itemvalue="Spring Boot.HttpDemoApplication" />
       <item itemvalue="Spring Boot.ItcastEurekaApplication" />
-      <item itemvalue="Spring Boot.ItcastServiceConsumerApplication" />
-      <item itemvalue="Spring Boot.TestApplication" />
-      <item itemvalue="Spring Boot.UserApplication" />
-      <item itemvalue="Spring Boot.ItcastEurekaApplication 2" />
+      <item itemvalue="Spring Boot.ItcastServiceProviderApplication 2" />
+      <item itemvalue="JUnit.ItcastServiceConsumerApplicationTests" />
+      <item itemvalue="JUnit.ItcastServiceConsumerApplicationTests.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ItcastServiceConsumerApplicationTests.test" />
+        <item itemvalue="JUnit.ItcastServiceConsumerApplicationTests" />
         <item itemvalue="JUnit.HttpDemoApplicationTests.httpGet" />
         <item itemvalue="JUnit.HttpTests.testGet" />
-        <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="JUnit.HttpTests.testPost" />
-        <item itemvalue="Spring Boot.TestApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +256,7 @@
       <workItem from="1580394408378" duration="3618000" />
       <workItem from="1580447088257" duration="20322000" />
       <workItem from="1580629647497" duration="5887000" />
-      <workItem from="1580708955895" duration="13121000" />
+      <workItem from="1580708955895" duration="17849000" />
     </task>
     <servers />
   </component>
@@ -263,10 +268,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="788" y="138" key="#ItcastEurekaApplication_(1)/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580731365780" />
+    <state x="590" y="194" key="#ItcastServiceProviderApplication_(1)" timestamp="1580801754295">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="590" y="194" key="#ItcastServiceProviderApplication_(1)/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580801754295" />
     <state x="108" y="178" key="#Project_Structure" timestamp="1580396673188">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="108" y="178" key="#Project_Structure/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580396673188" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580804344103">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580804344103" />
     <state x="660" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580553826493">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -283,61 +296,61 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="296" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580708994059" />
-    <state width="1454" height="330" key="GridCell.Tab.0.bottom" timestamp="1580731430055">
+    <state width="1877" height="341" key="GridCell.Tab.0.bottom" timestamp="1580804292400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1728" height="794" key="GridCell.Tab.0.bottom/0.0.1920.1040/-332.-1440.2048.1112@-332.-1440.2048.1112" timestamp="1580559028314" />
     <state width="1877" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580710434271" />
-    <state width="1454" height="330" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580731430055" />
+    <state width="1877" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580804292400" />
     <state width="1877" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580397912661" />
-    <state width="1454" height="330" key="GridCell.Tab.0.center" timestamp="1580731430055">
+    <state width="1877" height="341" key="GridCell.Tab.0.center" timestamp="1580804292400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1728" height="794" key="GridCell.Tab.0.center/0.0.1920.1040/-332.-1440.2048.1112@-332.-1440.2048.1112" timestamp="1580559028314" />
     <state width="1877" height="341" key="GridCell.Tab.0.center/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580710434270" />
-    <state width="1454" height="330" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580731430055" />
+    <state width="1877" height="341" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580804292400" />
     <state width="1877" height="304" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580397912661" />
-    <state width="1454" height="330" key="GridCell.Tab.0.left" timestamp="1580731430055">
+    <state width="1877" height="341" key="GridCell.Tab.0.left" timestamp="1580804292400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1728" height="794" key="GridCell.Tab.0.left/0.0.1920.1040/-332.-1440.2048.1112@-332.-1440.2048.1112" timestamp="1580559028314" />
     <state width="1877" height="341" key="GridCell.Tab.0.left/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580710434270" />
-    <state width="1454" height="330" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580731430055" />
+    <state width="1877" height="341" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580804292400" />
     <state width="1877" height="304" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580397912660" />
-    <state width="1454" height="330" key="GridCell.Tab.0.right" timestamp="1580731430055">
+    <state width="1877" height="341" key="GridCell.Tab.0.right" timestamp="1580804292400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1728" height="794" key="GridCell.Tab.0.right/0.0.1920.1040/-332.-1440.2048.1112@-332.-1440.2048.1112" timestamp="1580559028314" />
     <state width="1877" height="341" key="GridCell.Tab.0.right/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580710434271" />
-    <state width="1454" height="330" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580731430055" />
+    <state width="1877" height="341" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580804292400" />
     <state width="1877" height="304" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580397912661" />
-    <state width="1454" height="330" key="GridCell.Tab.1.bottom" timestamp="1580731430056">
+    <state width="1454" height="280" key="GridCell.Tab.1.bottom" timestamp="1580804260768">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1728" height="794" key="GridCell.Tab.1.bottom/0.0.1920.1040/-332.-1440.2048.1112@-332.-1440.2048.1112" timestamp="1580559028314" />
     <state width="1616" height="289" key="GridCell.Tab.1.bottom/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580710110806" />
-    <state width="1454" height="330" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580731430056" />
+    <state width="1454" height="280" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580804260768" />
     <state width="1877" height="304" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580397912661" />
-    <state width="1454" height="330" key="GridCell.Tab.1.center" timestamp="1580731430056">
+    <state width="1454" height="280" key="GridCell.Tab.1.center" timestamp="1580804260767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1728" height="794" key="GridCell.Tab.1.center/0.0.1920.1040/-332.-1440.2048.1112@-332.-1440.2048.1112" timestamp="1580559028314" />
     <state width="1616" height="289" key="GridCell.Tab.1.center/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580710110806" />
-    <state width="1454" height="330" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580731430056" />
+    <state width="1454" height="280" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580804260767" />
     <state width="1877" height="304" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580397912661" />
-    <state width="1454" height="330" key="GridCell.Tab.1.left" timestamp="1580731430056">
+    <state width="1454" height="280" key="GridCell.Tab.1.left" timestamp="1580804260767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1728" height="794" key="GridCell.Tab.1.left/0.0.1920.1040/-332.-1440.2048.1112@-332.-1440.2048.1112" timestamp="1580559028314" />
     <state width="1616" height="289" key="GridCell.Tab.1.left/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580710110806" />
-    <state width="1454" height="330" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580731430056" />
+    <state width="1454" height="280" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580804260767" />
     <state width="1877" height="304" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580397912661" />
-    <state width="1454" height="330" key="GridCell.Tab.1.right" timestamp="1580731430056">
+    <state width="1454" height="280" key="GridCell.Tab.1.right" timestamp="1580804260767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1728" height="794" key="GridCell.Tab.1.right/0.0.1920.1040/-332.-1440.2048.1112@-332.-1440.2048.1112" timestamp="1580559028314" />
     <state width="1616" height="289" key="GridCell.Tab.1.right/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580710110806" />
-    <state width="1454" height="330" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580731430056" />
+    <state width="1454" height="280" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580804260767" />
     <state width="1877" height="304" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580397912661" />
     <state width="1454" height="330" key="GridCell.Tab.2.bottom" timestamp="1580724110820">
       <screen x="0" y="0" width="1920" height="1040" />
