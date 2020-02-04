@@ -11,6 +11,7 @@ zuul:
 #      path: /service-provider/** # 此时通过！zuul端口！访问的任何包含xxx路径都会被分配到10001端口的服务器上去访问
 #      url: http://localhost:10001 #端口被写死，无法负载均衡。需要将zuul注册到eureka中获取服务名列表
 #      serviceId: service-provider
+
 eureka:
   client:
     service-url:
