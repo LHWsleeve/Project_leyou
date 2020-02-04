@@ -12,6 +12,7 @@
         <module name="itcast-eureka" />
         <module name="http-demo" />
         <module name="itcast-user" />
+        <module name="itcast-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +21,7 @@
       <module name="itcast-service-consumer" target="1.8" />
       <module name="itcast-service-provider" target="1.8" />
       <module name="itcast-user" target="1.8" />
+      <module name="itcast-zuul" target="1.8" />
       <module name="itcat_sringboot" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -30,6 +32,7 @@
       <module name="itcast-service-consumer" options="-parameters" />
       <module name="itcast-service-provider" options="-parameters" />
       <module name="itcast-user" options="-parameters" />
+      <module name="itcast-zuul" options="-parameters" />
       <module name="itcat_sringboot" options="-parameters" />
     </option>
   </component>

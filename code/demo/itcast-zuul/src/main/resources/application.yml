@@ -1,0 +1,17 @@
+server:
+  port: 12000
+spring:
+  application:
+    name: itcast-zuul
+
+# 如果不配zuul会默认将，路径中存在服务ID路径，自动分配给对应服务器（自带负载均衡和熔断）
+zuul:
+  routes:
+    service-provider: /service-provider/** #名称后面直接带path可以省略下面的path和serviceId
+#      path: /service-provider/** # 此时通过！zuul端口！访问的任何包含xxx路径都会被分配到10001端口的服务器上去访问
+#      url: http://localhost:10001 #端口被写死，无法负载均衡。需要将zuul注册到eureka中获取服务名列表
+#      serviceId: service-provider
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:11000/eureka
