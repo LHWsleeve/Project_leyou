@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient("service-provider")
+@FeignClient(value = "service-provider",fallback=UserClientFallback.class)
 public interface UserClient {
 
     @GetMapping("/user/{id}")
