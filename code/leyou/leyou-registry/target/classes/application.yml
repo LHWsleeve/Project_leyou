@@ -6,6 +6,6 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:${server.port}/eureka
+      defaultZone: http://127.0.0.1:${server.port}/eureka
     register-with-eureka: false # 注册中心不需要再配置到注册中心
     fetch-registry: false

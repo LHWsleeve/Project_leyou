@@ -10,6 +10,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -31,22 +32,48 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/leyou-item" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.1875" />
     <property name="project.structure.side.proportion" value="0.32416788" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\leyou\leyou-item" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager" selected="Spring Boot.LeyouRegistryApplication">
-    <configuration name="LeYouApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="leyou-registry" />
+    <configuration name="LeyouGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="leyou-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="comleyou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="comleyou.LeyouGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeyouItemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="leyou-item-service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.leyou.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.LeYouApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.LeyouItemApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -64,10 +91,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.LeyouGatewayApplication" />
+      <item itemvalue="Spring Boot.LeyouRegistryApplication" />
+      <item itemvalue="Spring Boot.LeyouItemApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.LeyouGatewayApplication" />
         <item itemvalue="Spring Boot.LeyouRegistryApplication" />
-        <item itemvalue="Spring Boot.LeYouApplication" />
+        <item itemvalue="Spring Boot.LeyouItemApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -75,8 +108,19 @@
     <option name="viewStates">
       <list>
         <serviceView>
+          <option name="contentProportion" value="0.16883117" />
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -93,7 +137,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580917471224</updated>
-      <workItem from="1580917475739" duration="1276000" />
+      <workItem from="1580917475739" duration="7735000" />
     </task>
     <servers />
   </component>
@@ -101,46 +145,62 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Project_Structure" timestamp="1580918235953">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1580979745679">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580918235953" />
-    <state width="1877" height="262" key="GridCell.Tab.0.bottom" timestamp="1580918765856">
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580979745679" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580979855746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580918765856" />
-    <state width="1877" height="262" key="GridCell.Tab.0.center" timestamp="1580918765855">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580979855746" />
+    <state x="689" y="301" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580979764964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="262" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580918765855" />
-    <state width="1877" height="262" key="GridCell.Tab.0.left" timestamp="1580918765855">
+    <state x="689" y="301" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580979764963" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1580978862677">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="262" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580918765855" />
-    <state width="1877" height="262" key="GridCell.Tab.0.right" timestamp="1580918765856">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580978862677" />
+    <state width="1535" height="203" key="GridCell.Tab.0.bottom" timestamp="1580980053610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="262" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580918765856" />
-    <state width="1877" height="266" key="GridCell.Tab.1.bottom" timestamp="1580918599685">
+    <state width="1535" height="203" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580980053610" />
+    <state width="1535" height="203" key="GridCell.Tab.0.center" timestamp="1580980053610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580918599685" />
-    <state width="1877" height="266" key="GridCell.Tab.1.center" timestamp="1580918599685">
+    <state width="1535" height="203" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580980053610" />
+    <state width="1535" height="203" key="GridCell.Tab.0.left" timestamp="1580980053609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580918599685" />
-    <state width="1877" height="266" key="GridCell.Tab.1.left" timestamp="1580918599685">
+    <state width="1535" height="203" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580980053609" />
+    <state width="1535" height="203" key="GridCell.Tab.0.right" timestamp="1580980053610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580918599685" />
-    <state width="1877" height="266" key="GridCell.Tab.1.right" timestamp="1580918599685">
+    <state width="1535" height="203" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580980053610" />
+    <state width="1535" height="203" key="GridCell.Tab.1.bottom" timestamp="1580980053610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580918599685" />
-    <state x="593" y="214" key="new project wizard" timestamp="1580917732159">
+    <state width="1535" height="203" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580980053610" />
+    <state width="1535" height="203" key="GridCell.Tab.1.center" timestamp="1580980053610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="593" y="214" key="new project wizard/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580917732159" />
+    <state width="1535" height="203" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580980053610" />
+    <state width="1535" height="203" key="GridCell.Tab.1.left" timestamp="1580980053610">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1535" height="203" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580980053610" />
+    <state width="1535" height="203" key="GridCell.Tab.1.right" timestamp="1580980053610">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1535" height="203" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580980053610" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1580978021409">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580978021409" />
+    <state x="593" y="214" key="new project wizard" timestamp="1580980256354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="593" y="214" key="new project wizard/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580980256354" />
     <state x="623" y="239" key="search.everywhere.popup" timestamp="1580917928102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
