@@ -201,13 +201,13 @@
       <item itemvalue="JUnit.HttpDemoApplicationTests.httpGet" />
       <item itemvalue="JUnit.HttpTests.testGet" />
       <item itemvalue="JUnit.HttpTests.testPost" />
+      <item itemvalue="JUnit.ItcastServiceConsumerApplicationTests" />
+      <item itemvalue="JUnit.ItcastServiceConsumerApplicationTests.test" />
       <item itemvalue="Spring Boot.ItcastServiceConsumerApplication" />
       <item itemvalue="Spring Boot.ItcastServiceProviderApplication" />
       <item itemvalue="Spring Boot.HttpDemoApplication" />
       <item itemvalue="Spring Boot.ItcastEurekaApplication" />
       <item itemvalue="Spring Boot.ItcastServiceProviderApplication 2" />
-      <item itemvalue="JUnit.ItcastServiceConsumerApplicationTests" />
-      <item itemvalue="JUnit.ItcastServiceConsumerApplicationTests.test" />
       <item itemvalue="Spring Boot.ItcastZuulApplication" />
     </list>
     <recent_temporary>
@@ -230,16 +230,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -270,6 +260,8 @@
       <workItem from="1580447088257" duration="20322000" />
       <workItem from="1580629647497" duration="5887000" />
       <workItem from="1580708955895" duration="29274000" />
+      <workItem from="1580826954083" duration="8000" />
+      <workItem from="1580917355053" duration="119000" />
     </task>
     <servers />
   </component>
@@ -399,19 +391,20 @@
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580553727884" />
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580715496952" />
-    <state x="645" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580629661252">
+    <state x="645" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580917356153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="645" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580629661252" />
+    <state x="645" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580917356153" />
     <state x="729" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1580486008443">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="729" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580486008443" />
-    <state x="628" y="242" width="874" height="611" key="new project wizard" timestamp="1580820998130">
+    <state x="582" y="237" width="874" height="690" key="new project wizard" timestamp="1580917470828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="256" y="242" key="new project wizard/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580553607365" />
-    <state x="628" y="242" width="874" height="611" key="new project wizard/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580820998130" />
+    <state x="582" y="237" width="874" height="690" key="new project wizard/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580917470828" />
     <state x="661" y="147" key="refactoring.ChangeSignatureDialog" timestamp="1580557628895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

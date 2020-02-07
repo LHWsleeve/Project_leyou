@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="message">
+    <hr/>
+    <div>
+        {{birth()}} //在这里调用method方法渲染返回值必须要加括号<br/>
+        {{birth2}} //在这里调用mcomputed方法渲染返回值必须要加括号
+
+    </div>
+    <hr/>
+    <input type="text" v-model="stock">
+    <div :class="{active: stock>0}" class="static">加入购物车</div>
+    //可以通过active动态声明html属性，这种方式控制按钮的活性，比如加入购物车。class="static"永远存在，并且可以有很多。
+    <hr/>
+    <input type="button" value="点我生成随机数" @click="random=Math.random()">{{random}}<br/>
+    <span v-if="random>0.9">大于0.9</span>
+    <span v-else-if="random>0.75">大于0.75</span>
+    <span v-else-if="random>0.4">大于0.4</span>
+    <span v-else="random>0.0">大于0.0</span>
+
+
+
+    <hr/>
+    <input type="button" value="点我show取反" @click="show=!show">
+    <div v-if="show">你看见啦，v-if</div>//效率更高，false的时候直接不渲染
+    <div v-show="show">你看到我啦，v-show</div>
+    <hr/>
+    <ul>
+        <li v-for="(val,key,index) in user">{{index+1}}.{{val}}-{{key}}</li>
+    </ul>
+    <hr/>
+    <ul>
+        <li v-for="(user, index) in users" :key="index">{{index+1}}.{{user.name}}-{{user.gender}}-{{user.age}}</li>
+        //尽可能在使用v-for时提供唯一值key，提高效率。一般都是index
+    </ul>
+    <hr/>
+    <input type="button" value="键盘按键触发" @keyup.alt.67="print">//只能用右侧altar+ascill(67=c)
+    <hr/>
+    <input type="button" value="打印" @contextMenu.prevent="print">
+    <hr/>
+    <input type="checkbox" v-model="lanage" value="java">java<br/>
+    <input type="checkbox" v-model="lanage" value="ios">ios<br/>
+    <input type="checkbox" v-model="lanage" value="php">php<br/>
+    您选择了:{{lanage.join(",")}}
+
+    <hr/>
+    <input type="text" v-model="num">
+    <input type="button" value="点我+1" @click="ince">
+<!--    声明式渲染，单项渲染-->
+    <h1>大家好我是<span v-text="name">张学友</span>。双向绑定{{num}}</h1>
+</div>
+
+</body>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    //初始化一个vue实例
+    let app = new Vue({
+        el:"#app",//el选择器，vue实例对应html模板
+        data: {//数据模型
+            name: "pig",
+            num: 100,
+            lanage: [],
+            users: [
+                {name: '柳岩', gender: '女', age: 21},
+                {name: '峰哥', gender: '男', age: 18},
+                {name: '范冰冰', gender: '女', age: 24},
+                {name: '刘亦菲', gender: '女', age: 18},
+                {name: '古力娜扎', gender: '女', age: 25}],
+            user: {name: '柳岩', gender: '女', age: 21},
+            show:true,
+            random:0,
+            stock:0,
+            birthday:1429032123201,
+            message:""
+        },
+        created(){
+            this.num=100000;
+        },
+        watch:{//监控方法，检测输入的变化
+            message(newVal, oldVal){
+                console.log(newVal,oldVal);
+            }
+        },
+        computed:{
+            //这里也可以定义方法，但时这里定义的方法必须有返回值.可以向数据模型一样使用，
+            // 最重要的是，他会依赖数据模型进行缓存，如果依赖不变那就从缓存中取数据。例子中就是birthday
+            birth2(){
+                const date = new Date(this.birthday);
+                return date.getFullYear()+"年"+date.getMonth()+"月";
+            }
+        }
+        ,
+        methods:{//定义方法
+            ince(){
+                console.log(this);
+                this.num++;
+            },
+            print() {
+                // ev.preventDefault()//禁用默认事件
+                console.log("点击了右键");
+            },
+            birth(){
+                const date = new Date(this.birthday);
+                return date.getFullYear()+"年"+date.getMonth()+"月";
+            }
+        }
+    })
+</script>
+</html>

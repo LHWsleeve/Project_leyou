@@ -55,6 +55,8 @@
       <option name="presentableId" value="Default" />
       <updated>1580998452287</updated>
       <workItem from="1580998455035" duration="2303000" />
+      <workItem from="1581065591053" duration="2984000" />
+      <workItem from="1581081724087" duration="9232000" />
     </task>
     <servers />
   </component>
@@ -62,17 +64,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Project_Structure" timestamp="1580998461649">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1581077019926">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580998461649" />
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581077019926" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1580998496970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580998496970" />
-    <state x="593" y="130" key="new project wizard" timestamp="1580998488523">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1581081723393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="593" y="130" key="new project wizard/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580998488523" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581081723393" />
+    <state x="593" y="130" key="new project wizard" timestamp="1581077013797">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="593" y="130" key="new project wizard/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581077013797" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581092372367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581092372367" />
   </component>
 </project>
