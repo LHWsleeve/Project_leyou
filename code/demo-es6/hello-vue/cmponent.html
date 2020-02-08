@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--全局组件-->
+<body>
+<div id="app">
+<counter :numx="num" title="11"></counter>//静态解析等号后面被认为是字符串，除非加上：，动态解析
+
+</div>
+</body>
+<script src="node_modules\vue\dist\vue.js"></script>
+<script>
+   Vue.component("counter",{
+       template:`
+       <button @click="numx++">点我+1，{{numx}}</button>
+       `,
+       props:{
+           numx:{
+               type:Number,
+               required:true
+           },
+           title:{
+               type:Number
+           }
+       }
+       // data(){
+       //     return {
+       //         num:0
+       //     }
+       // }
+   })
+
+    const app=new Vue({
+        el:"#app",
+        data:{
+            num:2
+        }
+
+
+    })
+</script>
+</html>

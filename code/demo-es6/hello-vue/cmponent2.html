@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--子向父传递数据-->
+<!--子组件中调用父组件的方法：子组件改变父组件数据模型。
+父组件定义方法--》自定义事件--》子组件中通过调用自定义事件名调用父方法-->
+<body>
+<div id="app">
+<counter :numx="num" @ince1="ince()"></counter>
+
+</div>
+</body>
+<script src="node_modules\vue\dist\vue.js"></script>
+<script>
+   Vue.component("counter",{
+       template:`
+       <button @click="sunInce()">点我+1，{{numx}}</button>
+       `,
+       props: {
+           numx: {
+               type: Number,
+               required: true
+           }
+       },
+       methods:{
+           sunInce(){
+               this.$emit("ince1");//通过再子组件中调用自定义时间名，调用父组件方法
+           }
+       }
+   })
+
+    const app=new Vue({
+        el:"#app",
+        data:{
+            num:2
+        },
+        methods:{
+            ince(){
+                this.num++;
+            }
+        }
+    })
+</script>
+</html>

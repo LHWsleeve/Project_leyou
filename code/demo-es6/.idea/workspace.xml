@@ -26,11 +26,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hello-vue" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.1875" />
     <property name="project.structure.side.proportion" value="0.32416788" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\demo-es6\hello-vue" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -56,7 +62,7 @@
       <updated>1580998452287</updated>
       <workItem from="1580998455035" duration="2303000" />
       <workItem from="1581065591053" duration="2984000" />
-      <workItem from="1581081724087" duration="9232000" />
+      <workItem from="1581081724087" duration="12405000" />
     </task>
     <servers />
   </component>
