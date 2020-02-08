@@ -1,0 +1,47 @@
+
+1.es6语法
+	const let
+	includes startsWith endsWith
+	解构表达式：数组 const [x,y,z] = arr 对象 const {name:a, age:b}=person
+	函数优化: 1.赋默认值 2.箭头 ()=>{} 3.对象 eat(){}
+	map(fun)：处理数组中的每一个元素放入新的数组
+	reduce((a,b)=>a+b, 100): 
+	keys values entries
+	assign(dest, ...src): 前拷贝
+	find() findIndex includes
+
+2.MVVM
+	M:数据模型
+	V：视图渲染的模板
+	vm：视图和模型的映射关系，vue
+
+3.vue程序
+	html模板
+		声明式渲染：
+			{{数据模型}}: 插值闪烁
+			v-text: 
+			v-html: 解析数据模型中的html元素
+		双向渲染：
+			v-model=数据模型：在form表单元素中使用才有意义
+		事件：v-on 简写：@
+			@click：点击事件
+			@contextMenu.prevent：右击事件
+			@keyup.enter: 回车事件
+		v-for: 遍历数组或者对象，比v-if执行优先级更高
+			数组：v-for="(item,index) in items"
+			对象：v-for="(val, key, index) in user"
+			key：提高渲染效率
+		v-if: 判断
+			v-if="布尔表达式" : false-不再渲染 true-渲染
+			v-show="布尔表达式" : 都会渲染 false-隐藏
+			v-else-if v-else
+		v-bind: 绑定属性，简写冒号
+			:class="{active: 布尔表达式}"
+	
+	vue实例
+		el：选择器
+		data：数据模型
+		methods：定义方法
+		created()：vue实例初始化之后执行，初始化数据
+		computed：计算属性，跟方法类似，但是所有的方法必须有返回值，可以像数据模型一样使用，基于依赖的数据模型进行缓存
+		watch：监控，定义监控方法，方法名跟被监控的数据模型名一致 两个参数：newVal oldVal
