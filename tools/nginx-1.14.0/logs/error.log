@@ -1,0 +1,5 @@
+2020/02/08 22:33:06 [notice] 16960#7352: signal process started
+2020/02/08 22:33:58 [notice] 18736#20288: signal process started
+2020/02/08 23:36:28 [notice] 19500#10880: signal process started
+2020/02/08 23:47:51 [emerg] 19412#7368: unknown directive "//监听80端口，默认端口就是80" in C:\Users\liuha\Documents\GitHub\Project_leyou\tools\nginx-1.14.0/conf/nginx.conf:37
+2020/02/08 23:48:42 [notice] 19492#2384: signal process started
