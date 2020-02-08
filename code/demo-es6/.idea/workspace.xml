@@ -11,6 +11,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -34,6 +35,9 @@
     <property name="project.structure.side.proportion" value="0.32416788" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\demo-es6\hello-vue\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\demo-es6\hello-vue" />
     </key>
@@ -62,7 +66,7 @@
       <updated>1580998452287</updated>
       <workItem from="1580998455035" duration="2303000" />
       <workItem from="1581065591053" duration="2984000" />
-      <workItem from="1581081724087" duration="12734000" />
+      <workItem from="1581081724087" duration="14561000" />
     </task>
     <servers />
   </component>
@@ -74,10 +78,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581077019926" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1580998496970">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1581154503682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580998496970" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581154503682" />
     <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1581081723393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
