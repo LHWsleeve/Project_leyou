@@ -1,11 +1,8 @@
 package com.leyou.upload.controller;
 
 
-import com.leyou.upload.controller.service.UploadService;
-import com.sun.org.apache.xalan.internal.xsltc.dom.SimpleResultTreeImpl;
+import com.leyou.upload.service.UploadService;
 import org.apache.commons.lang.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,9 +23,9 @@ public class UpController {
     @PostMapping("/image")
     public ResponseEntity<String> upLoadImage(@RequestParam("file") MultipartFile file) {
         String url = uploadService.uploadImage(file);
-        if (StringUtils.isNotBlank(url)){
+        if (StringUtils.isBlank(url)){
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
         }
-        return ResponseEntity.status(HttpStatus.CREATED).build();
+        return ResponseEntity.status(HttpStatus.CREATED).body(url);
     }
 }

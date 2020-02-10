@@ -1,4 +1,4 @@
-package com.leyou.upload.controller.service;
+package com.leyou.upload.service;
 
 import com.leyou.upload.controller.UpController;
 import org.slf4j.Logger;
@@ -37,7 +37,7 @@ public class UploadService {
             //3.上传
             file.transferTo(new File("C:\\Users\\liuha\\Documents\\GitHub\\Project_leyou\\images\\"+originalFilename));
             //4.返回url
-            return "http://image/leyou.com/"+originalFilename ;
+            return "http://image.leyou.com/"+originalFilename ;
         } catch (IOException e) {
             LOGGER.info("文件上传失败：{}，服务器异常", originalFilename);
             e.printStackTrace();

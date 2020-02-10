@@ -2,3 +2,19 @@
 2020/02/10 16:26:20 [notice] 23796#3936: signal process started
 2020/02/10 16:29:08 [error] 20688#25300: *1318 CreateFile() "C:/Users/liuha/Documents/GitHub/Project_leyou/images/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: image.leyou.com, request: "GET /favicon.ico HTTP/1.1", host: "image.leyou.com", referrer: "http://image.leyou.com/153.jpg"
 2020/02/10 19:21:20 [notice] 21696#25348: signal process started
+2020/02/10 19:58:08 [notice] 8972#21076: signal process started
+2020/02/10 19:59:17 [notice] 24064#16700: signal process started
+2020/02/10 20:09:13 [notice] 19084#18208: signal process started
+2020/02/10 20:12:10 [notice] 9424#1904: signal process started
+2020/02/10 20:13:24 [error] 23184#8212: *1759 client intended to send too large body: 1417345 bytes, client: 127.0.0.1, server: api.leyou.com, request: "POST /api/upload/image HTTP/1.1", host: "api.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/10 20:13:30 [error] 23184#8212: *1767 client intended to send too large body: 1417345 bytes, client: 127.0.0.1, server: api.leyou.com, request: "POST /api/upload/image HTTP/1.1", host: "api.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/10 20:14:19 [error] 23184#8212: *1780 client intended to send too large body: 1417345 bytes, client: 127.0.0.1, server: api.leyou.com, request: "POST /api/upload/image HTTP/1.1", host: "api.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/10 20:18:56 [error] 23184#8212: *1799 client intended to send too large body: 1417345 bytes, client: 127.0.0.1, server: api.leyou.com, request: "POST /api/upload/image HTTP/1.1", host: "api.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/10 20:21:52 [notice] 24912#22396: signal process started
+2020/02/10 20:21:56 [error] 20488#6712: *1807 client intended to send too large body: 1417345 bytes, client: 127.0.0.1, server: api.leyou.com, request: "POST /api/upload/image HTTP/1.1", host: "api.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/10 20:24:44 [error] 20488#6712: *1818 client intended to send too large body: 1417345 bytes, client: 127.0.0.1, server: api.leyou.com, request: "POST /api/upload/image HTTP/1.1", host: "api.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/10 20:27:34 [error] 20488#6712: *1829 client intended to send too large body: 1417345 bytes, client: 127.0.0.1, server: api.leyou.com, request: "POST /api/upload/image HTTP/1.1", host: "api.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/10 20:29:30 [notice] 23948#2200: signal process started
+2020/02/10 20:29:48 [notice] 22380#22008: signal process started
+2020/02/10 20:29:56 [error] 25344#7568: *1842 client intended to send too large body: 1417345 bytes, client: 127.0.0.1, server: api.leyou.com, request: "POST /api/upload/image HTTP/1.1", host: "api.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/10 20:32:41 [notice] 25240#23688: signal process started
