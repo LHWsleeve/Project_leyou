@@ -9,6 +9,7 @@ import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
@@ -39,5 +40,16 @@ public class BrandService {
         PageInfo<Brand> pageInfo = new PageInfo<>(brands);
 
         return new PageResult<>(pageInfo.getTotal(),pageInfo.getList());
+    }
+
+    /**
+     * 新增品牌
+     * @param brand
+     * @param cids
+     */
+    @Transactional
+    public void saveBrand(Brand brand, List<Long> cids) {
+        this.brandMapper.insertSelective(brand);//如果这条执行成功，吓一跳执行失败，会产生垃圾数据。所以加事务
+        cids.forEach(cid->this.brandMapper.saveCategroyAndBrand(cid,brand.getId()));
     }
 }

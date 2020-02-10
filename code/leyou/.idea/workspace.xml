@@ -52,7 +52,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LeyouItemApplication">
+  <component name="RunManager" selected="Spring Boot.LeyouGatewayApplication">
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.Solution" />
+      <module name="leyou" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LeyouGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="leyou-gateway" />
       <extension name="coverage">
@@ -96,10 +103,12 @@
       <item itemvalue="Spring Boot.LeyouGatewayApplication" />
       <item itemvalue="Spring Boot.LeyouRegistryApplication" />
       <item itemvalue="Spring Boot.LeyouItemApplication" />
+      <item itemvalue="Application.Solution" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.LeyouItemApplication" />
+        <item itemvalue="Application.Solution" />
         <item itemvalue="Spring Boot.LeyouGatewayApplication" />
         <item itemvalue="Spring Boot.LeyouRegistryApplication" />
       </list>
@@ -121,6 +130,11 @@
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
             </expand>
             <select />
           </treeState>
@@ -141,7 +155,7 @@
       <workItem from="1580917475739" duration="10887000" />
       <workItem from="1581065588919" duration="681000" />
       <workItem from="1581227299395" duration="5325000" />
-      <workItem from="1581235895000" duration="7281000" />
+      <workItem from="1581235895000" duration="12781000" />
     </task>
     <servers />
   </component>
@@ -149,10 +163,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Project_Structure" timestamp="1581227517725">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1581315836097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581227517725" />
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581315836097" />
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580979855746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -169,38 +183,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581230618344" />
-    <state width="1463" height="393" key="GridCell.Tab.0.bottom" timestamp="1581253738119">
+    <state width="1463" height="254" key="GridCell.Tab.0.bottom" timestamp="1581317108973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1463" height="393" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581253738119" />
-    <state width="1463" height="393" key="GridCell.Tab.0.center" timestamp="1581253738119">
+    <state width="1463" height="254" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581317108973" />
+    <state width="1463" height="254" key="GridCell.Tab.0.center" timestamp="1581317108973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1463" height="393" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581253738119" />
-    <state width="1463" height="393" key="GridCell.Tab.0.left" timestamp="1581253738119">
+    <state width="1463" height="254" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581317108973" />
+    <state width="1463" height="254" key="GridCell.Tab.0.left" timestamp="1581317108973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1463" height="393" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581253738119" />
-    <state width="1463" height="393" key="GridCell.Tab.0.right" timestamp="1581253738119">
+    <state width="1463" height="254" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581317108973" />
+    <state width="1463" height="254" key="GridCell.Tab.0.right" timestamp="1581317108973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1463" height="393" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581253738119" />
-    <state width="1463" height="393" key="GridCell.Tab.1.bottom" timestamp="1581253738120">
+    <state width="1463" height="254" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581317108973" />
+    <state width="1463" height="254" key="GridCell.Tab.1.bottom" timestamp="1581317108973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1463" height="393" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581253738120" />
-    <state width="1463" height="393" key="GridCell.Tab.1.center" timestamp="1581253738120">
+    <state width="1463" height="254" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581317108973" />
+    <state width="1463" height="254" key="GridCell.Tab.1.center" timestamp="1581317108973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1463" height="393" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581253738120" />
-    <state width="1463" height="393" key="GridCell.Tab.1.left" timestamp="1581253738120">
+    <state width="1463" height="254" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581317108973" />
+    <state width="1463" height="254" key="GridCell.Tab.1.left" timestamp="1581317108973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1463" height="393" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581253738120" />
-    <state width="1463" height="393" key="GridCell.Tab.1.right" timestamp="1581253738120">
+    <state width="1463" height="254" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581317108973" />
+    <state width="1463" height="254" key="GridCell.Tab.1.right" timestamp="1581317108973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1463" height="393" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581253738120" />
+    <state width="1463" height="254" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581317108973" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1580978021409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -213,5 +227,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="239" key="search.everywhere.popup/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580917928102" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/Solution.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
