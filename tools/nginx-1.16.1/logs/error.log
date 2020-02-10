@@ -1,1 +1,4 @@
 2020/02/09 16:14:11 [notice] 14476#13764: signal process started
+2020/02/10 16:26:20 [notice] 23796#3936: signal process started
+2020/02/10 16:29:08 [error] 20688#25300: *1318 CreateFile() "C:/Users/liuha/Documents/GitHub/Project_leyou/images/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: image.leyou.com, request: "GET /favicon.ico HTTP/1.1", host: "image.leyou.com", referrer: "http://image.leyou.com/153.jpg"
+2020/02/10 19:21:20 [notice] 21696#25348: signal process started
