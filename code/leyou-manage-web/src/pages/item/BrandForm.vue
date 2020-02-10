@@ -72,7 +72,7 @@
           this.$http({
             method: this.isEdit ? 'put' : 'post',
             url: '/item/brand',
-            data: params
+            data: this.$qs.stringify(params) //qs工具stringify把一个json ==》查询字符串
           }).then(() => {
             // 关闭窗口
             this.$emit("close");
