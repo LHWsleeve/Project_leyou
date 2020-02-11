@@ -18,3 +18,5 @@ eureka:
     lease-renewal-interval-in-seconds: 5
 mybatis:
   type-aliases-package: com.leyou.item.pojo
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
