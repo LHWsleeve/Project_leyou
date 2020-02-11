@@ -18,3 +18,37 @@
 2020/02/10 20:29:48 [notice] 22380#22008: signal process started
 2020/02/10 20:29:56 [error] 25344#7568: *1842 client intended to send too large body: 1417345 bytes, client: 127.0.0.1, server: api.leyou.com, request: "POST /api/upload/image HTTP/1.1", host: "api.leyou.com", referrer: "http://manage.leyou.com/"
 2020/02/10 20:32:41 [notice] 25240#23688: signal process started
+2020/02/11 00:36:19 [alert] 14696#9292: worker process 8932 exited with code C0000142
+2020/02/11 00:36:19 [alert] 14696#9292: could not respawn worker
+2020/02/11 16:10:45 [emerg] 2776#17328: unknown directive "//nginx默认不允许太大的请求实体上传" in C:\Users\liuha\Documents\GitHub\Project_leyou\tools\nginx-1.16.1/conf/nginx.conf:27
+2020/02/11 16:11:44 [emerg] 18312#92: unknown directive "//nginx默认不允许太大的请求实体上传" in C:\Users\liuha\Documents\GitHub\Project_leyou\tools\nginx-1.16.1/conf/nginx.conf:27
+2020/02/11 16:12:43 [emerg] 1036#19412: unknown directive "//nginx默认不允许太大的请求实体上传" in C:\Users\liuha\Documents\GitHub\Project_leyou\tools\nginx-1.16.1/conf/nginx.conf:27
+2020/02/11 16:13:06 [emerg] 6244#8900: unknown directive "//nginx默认不允许太大的请求实体上传" in C:\Users\liuha\Documents\GitHub\Project_leyou\tools\nginx-1.16.1/conf/nginx.conf:27
+2020/02/11 16:18:00 [notice] 16764#16480: signal process started
+2020/02/11 16:18:00 [error] 16764#16480: OpenEvent("Global\ngx_reload_14696") failed (2: The system cannot find the file specified)
+2020/02/11 16:18:36 [notice] 8900#10204: signal process started
+2020/02/11 16:18:36 [error] 8900#10204: OpenEvent("Global\ngx_stop_14696") failed (2: The system cannot find the file specified)
+2020/02/11 16:19:24 [error] 4280#17596: *2 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: manage.leyou.com, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:9001/", host: "manage.leyou.com"
+2020/02/11 16:19:27 [error] 4280#17596: *2 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: manage.leyou.com, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:9001/favicon.ico", host: "manage.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/11 16:23:14 [error] 4280#17596: *7 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: manage.leyou.com, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:9001/", host: "manage.leyou.com"
+2020/02/11 16:23:17 [error] 4280#17596: *7 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: manage.leyou.com, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:9001/favicon.ico", host: "manage.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/11 16:24:21 [notice] 14040#17232: signal process started
+2020/02/11 16:24:26 [error] 18060#11416: *11 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: manage.leyou.com, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:9001/", host: "manage.leyou.com"
+2020/02/11 16:24:29 [error] 18060#11416: *11 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: manage.leyou.com, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:9001/favicon.ico", host: "manage.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/11 16:24:42 [error] 18060#11416: *11 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: manage.leyou.com, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:9001/", host: "manage.leyou.com"
+2020/02/11 16:24:45 [error] 18060#11416: *11 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: manage.leyou.com, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:9001/favicon.ico", host: "manage.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/11 16:25:48 [notice] 17832#14668: signal process started
+2020/02/11 16:29:29 [error] 19332#11096: *7 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: manage.leyou.com, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:9001/", host: "manage.leyou.com"
+2020/02/11 16:29:32 [error] 19332#11096: *7 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: manage.leyou.com, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:9001/favicon.ico", host: "manage.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/11 16:31:33 [error] 19332#11096: *29 client intended to send too large body: 1417345 bytes, client: 127.0.0.1, server: api.leyou.com, request: "POST /api/upload/image HTTP/1.1", host: "api.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/11 16:32:33 [error] 19332#11096: *27 client intended to send too large body: 1417345 bytes, client: 127.0.0.1, server: api.leyou.com, request: "POST /api/upload/image HTTP/1.1", host: "api.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/11 16:37:03 [error] 19332#11096: *45 client intended to send too large body: 1417345 bytes, client: 127.0.0.1, server: api.leyou.com, request: "POST /api/upload/image HTTP/1.1", host: "api.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/11 16:40:31 [error] 19332#11096: *55 client intended to send too large body: 1417345 bytes, client: 127.0.0.1, server: api.leyou.com, request: "POST /api/upload/image HTTP/1.1", host: "api.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/11 16:41:00 [error] 19332#11096: *58 client intended to send too large body: 1417345 bytes, client: 127.0.0.1, server: api.leyou.com, request: "POST /api/upload/image HTTP/1.1", host: "api.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/11 16:41:14 [error] 19332#11096: *60 client intended to send too large body: 1417345 bytes, client: 127.0.0.1, server: api.leyou.com, request: "POST /api/upload/image HTTP/1.1", host: "api.leyou.com", referrer: "http://manage.leyou.com/"
+2020/02/11 16:42:11 [notice] 16496#3768: signal process started
+2020/02/11 16:42:20 [notice] 5692#15636: signal process started
+2020/02/11 16:42:26 [notice] 15484#17892: signal process started
+2020/02/11 16:42:26 [error] 15484#17892: CreateFile() "C:\Users\liuha\Documents\GitHub\Project_leyou\tools\nginx-1.16.1/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2020/02/11 16:42:30 [notice] 19364#19204: signal process started
+2020/02/11 16:42:30 [error] 19364#19204: CreateFile() "C:\Users\liuha\Documents\GitHub\Project_leyou\tools\nginx-1.16.1/logs/nginx.pid" failed (2: The system cannot find the file specified)

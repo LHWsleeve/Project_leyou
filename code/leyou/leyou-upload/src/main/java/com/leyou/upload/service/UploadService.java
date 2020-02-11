@@ -1,8 +1,12 @@
 package com.leyou.upload.service;
 
+import com.github.tobato.fastdfs.domain.StorePath;
+import com.github.tobato.fastdfs.service.FastFileStorageClient;
 import com.leyou.upload.controller.UpController;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -17,6 +21,8 @@ import java.util.List;
 public class UploadService {
     private final static List<String> CONTENT_TYPE = Arrays.asList("image/gif", "image/jpeg");
     private static final Logger LOGGER = LoggerFactory.getLogger(UpController.class);//日志
+    @Autowired
+    private FastFileStorageClient storageClient;
 
     public String uploadImage(MultipartFile file){
         //校验
@@ -35,9 +41,12 @@ public class UploadService {
                 return null;
             }
             //3.上传
-            file.transferTo(new File("C:\\Users\\liuha\\Documents\\GitHub\\Project_leyou\\images\\"+originalFilename));
+            String ext = StringUtils.substringAfterLast(originalFilename, ".");
+            StorePath storePath = this.storageClient.uploadFile(file.getInputStream(), file.getSize(), ext,null);
+
+//            file.transferTo(new File("C:\\Users\\liuha\\Documents\\GitHub\\Project_leyou\\images\\"+originalFilename));
             //4.返回url
-            return "http://image.leyou.com/"+originalFilename ;
+            return "http://image.leyou.com/"+storePath.getFullPath() ;
         } catch (IOException e) {
             LOGGER.info("文件上传失败：{}，服务器异常", originalFilename);
             e.printStackTrace();
