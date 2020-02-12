@@ -4,3 +4,5 @@ code/leyou/leyou-upload/target/*
 code/leyou/leyou-upload/target/*
 code/leyou/leyou-item/leyou-item-service/target/*
 tools/nginx-1.16.1/logs/*
+code/leyou/leyou-item/leyou-item-interface/target/*
+code/leyou/leyou-item/leyou-item-service/target/*
