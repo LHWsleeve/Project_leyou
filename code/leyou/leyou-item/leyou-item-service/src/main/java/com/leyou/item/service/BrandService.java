@@ -52,4 +52,14 @@ public class BrandService {
         this.brandMapper.insertSelective(brand);//如果这条执行成功，吓一跳执行失败，会产生垃圾数据。所以加事务
         cids.forEach(cid->this.brandMapper.saveCategroyAndBrand(cid,brand.getId()));
     }
+
+
+    /**
+     * 根据分类id查询品牌
+     * @param cid
+     * @return
+     */
+    public List<Brand> queryBrandsByCid(Long cid) {
+       return this.brandMapper.selectByCid(cid);
+    }
 }
