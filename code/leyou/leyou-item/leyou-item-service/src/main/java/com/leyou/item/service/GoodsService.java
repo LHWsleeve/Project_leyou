@@ -116,4 +116,25 @@ public class GoodsService {
             this.stockMapper.insertSelective(stock);
         });
     }
+
+    public SpuDetail querySpuDetailBySpuId(Long spuId) {
+        return this.spuDetailMapper.selectByPrimaryKey(spuId);
+    }
+
+    /**
+     * 根据spuid查询所有sku
+     * @param spuId
+     * @return
+     */
+    public List<Sku> querySkusById(Long spuId) {
+        Sku record = new Sku();
+        record.setSpuId(spuId);
+        List<Sku> skuList = this.skuMapper.select(record);
+        //查询每个sku对应的库存
+        skuList.forEach(sku -> {
+            Stock stock = this.stockMapper.selectByPrimaryKey(sku.getId());
+            sku.setStock(stock.getStock());
+        });
+        return skuList;
+    }
 }

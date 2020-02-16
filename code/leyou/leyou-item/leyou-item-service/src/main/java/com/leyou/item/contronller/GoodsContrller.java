@@ -1,9 +1,13 @@
 package com.leyou.item.contronller;
 
 import com.leyou.common.pojo.PageResult;
+import com.leyou.item.pojo.Sku;
 import com.leyou.item.pojo.Spu;
+import com.leyou.item.pojo.SpuDetail;
 import com.leyou.item.pojo.bo.SpuBo;
 import com.leyou.item.service.GoodsService;
+import org.apache.ibatis.annotations.Param;
+import org.omg.CORBA.PUBLIC_MEMBER;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -51,5 +55,31 @@ public class GoodsContrller {
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
+    /**
+     * 根据主键查询spu的detail
+     * @param spuId
+     * @return
+     */
+    @GetMapping("spu/detail/{spuId}")
+    public ResponseEntity<SpuDetail> querySpuDetailBySpuId(@PathVariable("spuId")Long spuId){
+        SpuDetail spuDetail = this.goodsService.querySpuDetailBySpuId(spuId);
+        if (spuDetail==null){
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(spuDetail);
+    }
 
+    /**
+     * 根据spuid查询所有sku
+     * @param spuId
+     * @return
+     */
+    @GetMapping("sku/list")
+    public ResponseEntity<List<Sku>> querySkusById(@RequestParam("id") Long spuId){
+        List<Sku> skus = this.goodsService.querySkusById(spuId);
+        if (CollectionUtils.isEmpty(skus)){
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(skus);
+    }
 }
