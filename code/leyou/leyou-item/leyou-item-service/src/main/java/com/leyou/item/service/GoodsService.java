@@ -99,7 +99,11 @@ public class GoodsService {
         spuDetail.setSpuId(spuBo.getId());
         this.spuDetailMapper.insertSelective(spuDetail);
 
+        //ctrl+alt+m抽取方法
+        saveSkuAndStock(spuBo);
+    }
 
+    private void saveSkuAndStock(SpuBo spuBo) {
         List<Sku> skus = spuBo.getSkus();
         skus.forEach(sku -> {
             //遍历每一个sku，执行3，4
@@ -136,5 +140,33 @@ public class GoodsService {
             sku.setStock(stock.getStock());
         });
         return skuList;
+    }
+
+    /**
+     * 更新商品=先全部删除后新增
+     * @param spuBo
+     */
+    @Transactional
+    public void updateGoods(SpuBo spuBo) {
+        //先删除sku和stock
+          //查询所有的sku，遍历sku删除库存
+        Sku record = new Sku();
+        record.setSpuId(spuBo.getId());
+        List<Sku> skus = this.skuMapper.select(record);
+           //删除stock
+        skus.forEach(sku -> {this.stockMapper.deleteByPrimaryKey(sku.getId());});
+           //删除sku，根据skuid
+        this.skuMapper.delete(record);
+
+        //再新增sku和stock
+        this.saveSkuAndStock(spuBo);
+
+        //在更新spu和spuDetail,updateByPrimaryKeySelective:当一个字段为null的时候该字段不跟更新
+        spuBo.setSaleable(null);
+        spuBo.setValid(null);
+        spuBo.setCreateTime(null);
+        spuBo.setLastUpdateTime(new Date());
+        this.spuMapper.updateByPrimaryKeySelective(spuBo);
+        this.spuDetailMapper.updateByPrimaryKeySelective(spuBo.getSpuDetail());
     }
 }

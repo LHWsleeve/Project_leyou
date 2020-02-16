@@ -56,6 +56,16 @@ public class GoodsContrller {
     }
 
     /**
+     * 更新
+     * @param spuBo
+     * @return
+     */
+    @PutMapping("/goods")
+    public ResponseEntity<Void> updateGoods(@RequestBody SpuBo spuBo){
+        this.goodsService.updateGoods(spuBo);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
+    /**
      * 根据主键查询spu的detail
      * @param spuId
      * @return
@@ -74,7 +84,7 @@ public class GoodsContrller {
      * @param spuId
      * @return
      */
-    @GetMapping("sku/list")
+    @GetMapping("/sku/list")
     public ResponseEntity<List<Sku>> querySkusById(@RequestParam("id") Long spuId){
         List<Sku> skus = this.goodsService.querySkusById(spuId);
         if (CollectionUtils.isEmpty(skus)){
@@ -82,4 +92,5 @@ public class GoodsContrller {
         }
         return ResponseEntity.ok(skus);
     }
+
 }
