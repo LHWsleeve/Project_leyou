@@ -7,6 +7,7 @@ import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.aggregations.Aggregation;
 import org.elasticsearch.search.aggregations.AggregationBuilders;
 import org.elasticsearch.search.aggregations.bucket.terms.StringTerms;
+import org.elasticsearch.search.aggregations.metrics.avg.InternalAvg;
 import org.elasticsearch.search.sort.SortBuilders;
 import org.elasticsearch.search.sort.SortOrder;
 import org.junit.Test;
@@ -26,6 +27,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @SpringBootTest
@@ -106,7 +108,10 @@ public class ItcastElasticsearchApplicationTests {
         //构建自定义查询构建器
         NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
         //添加聚合查询，通过AggregationBuilders工具类构建聚合。
-        queryBuilder.addAggregation(AggregationBuilders.terms("brands").field("brand"));
+//        queryBuilder.addAggregation(AggregationBuilders.terms("brands").field("brand"));
+        //还可以同样的方式进行子聚合
+                queryBuilder.addAggregation(AggregationBuilders.terms("brands").field("brand")
+                .subAggregation(AggregationBuilders.avg("price_avg").field("price")));
         //因为没有size字段方法，所以添加结果集过滤：不包含任何字段，即没有普通结果集。过滤得到，包含空字符和不包含null的结果
         queryBuilder.withSourceFilter(new FetchSourceFilter(new String[]{},null));
         //执行聚合查询，获取聚合结果集。需要强转！
@@ -117,6 +122,11 @@ public class ItcastElasticsearchApplicationTests {
         brandAgg.getBuckets().forEach(bucket -> {
             System.out.println(bucket.getKeyAsString());
             System.out.println(bucket.getDocCount());
+            //解析子聚合,子聚合结果集转化成map结果。map的key:聚合名称，value：聚合对象
+            Map<String, Aggregation> stringAggregationMap = bucket.getAggregations().asMap();
+            //老样子记得强转
+            InternalAvg price_avg = (InternalAvg)stringAggregationMap.get("price_avg");
+            System.out.println(price_avg.getValue());
         });
 
 

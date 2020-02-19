@@ -1,0 +1,16 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: serch-service
+  data:
+    elasticsearch:
+      cluster-nodes: 192.168.29.128:9300
+      cluster-name: elasticsearch
+eureka:
+  client:
+    service-url: http://127.0.0.1:10000/eureka
+    registry-fetch-interval-seconds: 10
+  instance:
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5

@@ -11,8 +11,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,6 +40,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.1875" />
     <property name="project.structure.side.proportion" value="0.32416788" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -185,7 +186,7 @@
       <workItem from="1581831120246" duration="2302000" />
       <workItem from="1581834295250" duration="4865000" />
       <workItem from="1581843954445" duration="596000" />
-      <workItem from="1581860792747" duration="4102000" />
+      <workItem from="1581860792747" duration="5081000" />
     </task>
     <servers />
   </component>
@@ -193,10 +194,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Project_Structure" timestamp="1581403332621">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1582116939824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581403332621" />
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582116939824" />
     <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1581323555603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -277,10 +278,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1548" height="288" key="GridCell.Tab.2.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581509755976" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1581407980007">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1582116729508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581407980007" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582116729508" />
     <state x="406" y="101" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581323595871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -297,10 +298,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="567" y="70" width="786" height="900" key="find.popup/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581497470392" />
-    <state x="719" y="190" width="874" height="598" key="new project wizard" timestamp="1582079994424">
+    <state x="719" y="190" width="874" height="598" key="new project wizard" timestamp="1582116335352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="719" y="190" width="874" height="598" key="new project wizard/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582079994424" />
+    <state x="719" y="190" width="874" height="598" key="new project wizard/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582116335352" />
     <state x="636" y="366" width="716" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1581839780452">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
