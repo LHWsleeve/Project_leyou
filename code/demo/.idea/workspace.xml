@@ -75,7 +75,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ItcastElasticsearchApplicationTests.testFind">
+  <component name="RunManager" selected="JUnit.ItcastElasticsearchApplicationTests.testNative">
     <configuration name="ItcastElasticsearchApplicationTests.indexList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="itcast-elasticsearch" />
       <extension name="coverage">
@@ -87,22 +87,6 @@
       <option name="PACKAGE_NAME" value="cn.itcast.elasticsearch" />
       <option name="MAIN_CLASS_NAME" value="cn.itcast.elasticsearch.ItcastElasticsearchApplicationTests" />
       <option name="METHOD_NAME" value="indexList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ItcastElasticsearchApplicationTests.testCreat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="itcast-elasticsearch" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.itcast.elasticsearch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.itcast.elasticsearch" />
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.elasticsearch.ItcastElasticsearchApplicationTests" />
-      <option name="METHOD_NAME" value="testCreat" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,7 +124,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItcastElasticsearchApplicationTests.testIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ItcastElasticsearchApplicationTests.testMacth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="itcast-elasticsearch" />
       <extension name="coverage">
         <pattern>
@@ -150,7 +134,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="cn.itcast.elasticsearch" />
       <option name="MAIN_CLASS_NAME" value="cn.itcast.elasticsearch.ItcastElasticsearchApplicationTests" />
-      <option name="METHOD_NAME" value="testIndex" />
+      <option name="METHOD_NAME" value="testMacth" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItcastElasticsearchApplicationTests.testNative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="itcast-elasticsearch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itcast.elasticsearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.itcast.elasticsearch" />
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.elasticsearch.ItcastElasticsearchApplicationTests" />
+      <option name="METHOD_NAME" value="testNative" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -214,19 +214,19 @@
       <item itemvalue="Spring Boot.ItcastServiceProviderApplication 2" />
       <item itemvalue="Spring Boot.ItcastZuulApplication" />
       <item itemvalue="Spring Boot.ItcastElasticsearchApplication" />
-      <item itemvalue="JUnit.ItcastElasticsearchApplicationTests.testIndex" />
-      <item itemvalue="JUnit.ItcastElasticsearchApplicationTests.testCreat" />
       <item itemvalue="JUnit.ItcastElasticsearchApplicationTests.testCreate" />
       <item itemvalue="JUnit.ItcastElasticsearchApplicationTests.indexList" />
       <item itemvalue="JUnit.ItcastElasticsearchApplicationTests.testFind" />
+      <item itemvalue="JUnit.ItcastElasticsearchApplicationTests.testMacth" />
+      <item itemvalue="JUnit.ItcastElasticsearchApplicationTests.testNative" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ItcastElasticsearchApplicationTests.testFind" />
+        <item itemvalue="JUnit.ItcastElasticsearchApplicationTests.testNative" />
         <item itemvalue="JUnit.ItcastElasticsearchApplicationTests.indexList" />
+        <item itemvalue="JUnit.ItcastElasticsearchApplicationTests.testMacth" />
+        <item itemvalue="JUnit.ItcastElasticsearchApplicationTests.testFind" />
         <item itemvalue="JUnit.ItcastElasticsearchApplicationTests.testCreate" />
-        <item itemvalue="JUnit.ItcastElasticsearchApplicationTests.testCreat" />
-        <item itemvalue="JUnit.ItcastElasticsearchApplicationTests.testIndex" />
       </list>
     </recent_temporary>
   </component>
@@ -276,7 +276,7 @@
       <workItem from="1580826954083" duration="8000" />
       <workItem from="1580917355053" duration="119000" />
       <workItem from="1581230621927" duration="827000" />
-      <workItem from="1582080004023" duration="5398000" />
+      <workItem from="1582080004023" duration="7731000" />
     </task>
     <servers />
   </component>
@@ -318,33 +318,33 @@
     </state>
     <state x="296" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580708994059" />
     <state x="296" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582080047847" />
-    <state width="1877" height="297" key="GridCell.Tab.0.bottom" timestamp="1582097145629">
+    <state width="1877" height="249" key="GridCell.Tab.0.bottom" timestamp="1582100639923">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1728" height="794" key="GridCell.Tab.0.bottom/0.0.1920.1040/-332.-1440.2048.1112@-332.-1440.2048.1112" timestamp="1580559028314" />
     <state width="1877" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580710434271" />
-    <state width="1877" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582097145629" />
+    <state width="1877" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582100639923" />
     <state width="1877" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580397912661" />
-    <state width="1877" height="297" key="GridCell.Tab.0.center" timestamp="1582097145629">
+    <state width="1877" height="249" key="GridCell.Tab.0.center" timestamp="1582100639922">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1728" height="794" key="GridCell.Tab.0.center/0.0.1920.1040/-332.-1440.2048.1112@-332.-1440.2048.1112" timestamp="1580559028314" />
     <state width="1877" height="341" key="GridCell.Tab.0.center/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580710434270" />
-    <state width="1877" height="297" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582097145629" />
+    <state width="1877" height="249" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582100639922" />
     <state width="1877" height="304" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580397912661" />
-    <state width="1877" height="297" key="GridCell.Tab.0.left" timestamp="1582097145628">
+    <state width="1877" height="249" key="GridCell.Tab.0.left" timestamp="1582100639922">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1728" height="794" key="GridCell.Tab.0.left/0.0.1920.1040/-332.-1440.2048.1112@-332.-1440.2048.1112" timestamp="1580559028314" />
     <state width="1877" height="341" key="GridCell.Tab.0.left/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580710434270" />
-    <state width="1877" height="297" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582097145628" />
+    <state width="1877" height="249" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582100639922" />
     <state width="1877" height="304" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580397912660" />
-    <state width="1877" height="297" key="GridCell.Tab.0.right" timestamp="1582097145629">
+    <state width="1877" height="249" key="GridCell.Tab.0.right" timestamp="1582100639922">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1728" height="794" key="GridCell.Tab.0.right/0.0.1920.1040/-332.-1440.2048.1112@-332.-1440.2048.1112" timestamp="1580559028314" />
     <state width="1877" height="341" key="GridCell.Tab.0.right/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580710434271" />
-    <state width="1877" height="297" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582097145629" />
+    <state width="1877" height="249" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582100639922" />
     <state width="1877" height="304" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580397912661" />
     <state width="1511" height="320" key="GridCell.Tab.1.bottom" timestamp="1580825108997">
       <screen x="0" y="0" width="1920" height="1040" />
