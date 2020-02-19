@@ -49,7 +49,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/itcast-elasticsearch/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -63,6 +63,7 @@
       <recent name="cn.itcast.springboot.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\demo\itcast-elasticsearch\src\main\resources" />
       <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\demo\itcast-user\src\main\java\cn\itcast\user\pojo" />
       <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\demo\itcast-user\src\main\resources\static" />
     </key>
@@ -161,6 +162,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ItcastElasticsearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="itcast-elasticsearch" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.elasticsearch.ItcastElasticsearchApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ItcastEurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="itcast-eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.eureka.ItcastEurekaApplication" />
@@ -209,6 +217,7 @@
       <item itemvalue="Spring Boot.ItcastEurekaApplication" />
       <item itemvalue="Spring Boot.ItcastServiceProviderApplication 2" />
       <item itemvalue="Spring Boot.ItcastZuulApplication" />
+      <item itemvalue="Spring Boot.ItcastElasticsearchApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -263,6 +272,7 @@
       <workItem from="1580826954083" duration="8000" />
       <workItem from="1580917355053" duration="119000" />
       <workItem from="1581230621927" duration="827000" />
+      <workItem from="1582080004023" duration="2314000" />
     </task>
     <servers />
   </component>
@@ -290,19 +300,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="660" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580553826493" />
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1580824610332">
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1582092998247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580558293873" />
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580824610332" />
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582092998247" />
     <state x="386" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1580397203116">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="386" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580397203116" />
-    <state x="296" y="275" key="FileChooserDialogImpl" timestamp="1580708994059">
+    <state x="296" y="275" key="FileChooserDialogImpl" timestamp="1582080047847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="296" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580708994059" />
+    <state x="296" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582080047847" />
     <state width="1511" height="320" key="GridCell.Tab.0.bottom" timestamp="1580825108995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -401,11 +412,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="729" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580486008443" />
-    <state x="582" y="237" width="874" height="690" key="new project wizard" timestamp="1580917470828">
+    <state x="540" y="107" width="874" height="690" key="new project wizard" timestamp="1582080117363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="256" y="242" key="new project wizard/0.0.1920.1040/-332.-1440.2048.1112@0.0.1920.1040" timestamp="1580553607365" />
-    <state x="582" y="237" width="874" height="690" key="new project wizard/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580917470828" />
+    <state x="540" y="107" width="874" height="690" key="new project wizard/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582080117363" />
     <state x="661" y="147" key="refactoring.ChangeSignatureDialog" timestamp="1580557628895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
