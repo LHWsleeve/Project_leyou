@@ -4,6 +4,9 @@ import cn.itcast.elasticsearch.pojo.Item;
 import cn.itcast.elasticsearch.repository.ItemRepository;
 import org.elasticsearch.index.query.MatchQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.search.aggregations.Aggregation;
+import org.elasticsearch.search.aggregations.AggregationBuilders;
+import org.elasticsearch.search.aggregations.bucket.terms.StringTerms;
 import org.elasticsearch.search.sort.SortBuilders;
 import org.elasticsearch.search.sort.SortOrder;
 import org.junit.Test;
@@ -14,6 +17,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
+import org.springframework.data.elasticsearch.core.aggregation.AggregatedPage;
+import org.springframework.data.elasticsearch.core.query.FetchSourceFilter;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQuery;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
 import org.springframework.data.querydsl.QPageRequest;
@@ -96,6 +101,26 @@ public class ItcastElasticsearchApplicationTests {
         itemPage.forEach(System.out::println);
     }
 
+    @Test
+    public void testAgg(){
+        //构建自定义查询构建器
+        NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
+        //添加聚合查询，通过AggregationBuilders工具类构建聚合。
+        queryBuilder.addAggregation(AggregationBuilders.terms("brands").field("brand"));
+        //因为没有size字段方法，所以添加结果集过滤：不包含任何字段，即没有普通结果集。过滤得到，包含空字符和不包含null的结果
+        queryBuilder.withSourceFilter(new FetchSourceFilter(new String[]{},null));
+        //执行聚合查询，获取聚合结果集。需要强转！
+        AggregatedPage<Item> itemPage = (AggregatedPage<Item>)this.itemRepository.search(queryBuilder.build());
+        //获取聚合结果集中的聚合对象：根据聚合名称或获取所有聚合/！！强转成子类，才能继续进行桶操作
+        StringTerms brandAgg = (StringTerms)itemPage.getAggregation("brands");
+        //获取聚合中的桶。获取桶中的key和记录条数
+        brandAgg.getBuckets().forEach(bucket -> {
+            System.out.println(bucket.getKeyAsString());
+            System.out.println(bucket.getDocCount());
+        });
+
+
+    }
 
 
 
