@@ -4,6 +4,7 @@ import cn.itcast.elasticsearch.pojo.Item;
 import cn.itcast.elasticsearch.repository.ItemRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.omg.CORBA.PUBLIC_MEMBER;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
@@ -11,6 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
@@ -40,5 +42,14 @@ public class ItcastElasticsearchApplicationTests {
         list.add(new Item(3L, "华为META10", " 手机", "华为", 4499.00, "http://image.leyou.com/3.jpg"));
         // 接收对象集合，实现批量新增
         itemRepository.saveAll(list);
+    }
+
+    @Test
+    public void testFind(){
+//        Optional<Item> item = this.itemRepository.findById(1l);
+//        System.out.println(item.get());
+//        List<Item> items = this.itemRepository.findByTitle("手机");
+        List<Item> items = this.itemRepository.findByPriceBetween(3499d, 3699d);
+        items.forEach(System.out::println);//方法引用
     }
 }
