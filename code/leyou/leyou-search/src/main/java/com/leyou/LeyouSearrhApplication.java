@@ -10,6 +10,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 public class LeyouSearrhApplication {
     public static void main(String[] args) {
-        SpringApplication.run(LeyouSearrhApplication.class);
+         SpringApplication.run(LeyouSearrhApplication.class);
     }
 }
