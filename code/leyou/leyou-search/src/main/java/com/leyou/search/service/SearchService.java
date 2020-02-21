@@ -66,24 +66,23 @@ public class SearchService {
         //查询所有的搜索规格参数
         List<SpecParam> params = this.specificationClient.querySpecParams(null, spu.getCid3(), null, true);
         Map<String, Object> spec = new HashMap<>();
-
-        params.forEach(specParam -> {
+        for (SpecParam param : params) {
             //判断规格参数是否是通用的
-            if (specParam.getGeneric()==true){
-                String value = genericSpec.get(specParam.getId()).toString();
+            if (param.getGeneric()) {
+                String value = genericSpec.get(param.getId()).toString();
                 //判断是否是数值类型，如果是数值类型：返回范围
-                if (specParam.getNumeric()){
-                    value = chooseSegment(value, specParam);
+                if (param.getNumeric()) {
+                    value = chooseSegment(value, param);
                 }
                 //通用规格参数
-                spec.put(specParam.getName(),value);
-            }else {
+                spec.put(param.getName(), value);
+            } else {
                 //特殊规格参数
-                List<Object> value = sprcialSpec.get(specParam.getId());
-                spec.put(specParam.getName(),value);
+                List<Object> value = sprcialSpec.get(param.getId());
+                spec.put(param.getName(), value);
             }
 
-        });
+        }
 
         BeanUtils.copyProperties(spu,goods);//直接copy共同参数
         goods.setAll(spu.getTitle()+" "+ brand.getName()+" "+ StringUtils.join(names," "));

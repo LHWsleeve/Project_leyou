@@ -49,10 +49,8 @@ public class CategoryController {
         List<String> names = this.categoryService.queryNameByIds(ids);
 
         if (CollectionUtils.isEmpty(names)) {
-//                return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        //正常找到相应200
         return ResponseEntity.ok(names);
     }
 }
