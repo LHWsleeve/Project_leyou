@@ -760,8 +760,28 @@
     var vm = new Vue({
         el: "#searchApp",
         data: {
+            search:{
+                
+                key:""//搜索条件
+            },
+            goodsList:[]//数据模型的集合
         },
-
+        created(){
+            if(!location.search){
+                return;
+            }
+            const search = location.search.substring(1);//key="手机"
+            this.search = ly.parse(search);
+             
+             this.loadDate();
+        },
+        metheds:{
+            loadDate(){
+                ly.http.post("/search/page",this.search).then(res=>{
+                    console.log(res);
+                });
+            }
+        },
         components:{
             lyTop: () => import("./js/pages/top.js")
         }
