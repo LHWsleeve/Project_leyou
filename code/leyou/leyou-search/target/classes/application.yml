@@ -8,7 +8,7 @@ spring:
       cluster-nodes: 192.168.29.128:9300
       cluster-name: elasticsearch
   jackson:
-    default-property-inclusion: non_null #jackson相应json数据时忽略为null的字段
+    default-property-inclusion: non_null #jackson响应json数据时忽略为null的字段
 eureka:
   client:
     service-url:
