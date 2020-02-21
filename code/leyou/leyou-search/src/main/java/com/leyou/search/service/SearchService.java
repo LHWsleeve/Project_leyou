@@ -12,20 +12,27 @@ import com.leyou.search.client.GoodsClients;
 import com.leyou.search.client.SpecificationClient;
 import com.leyou.search.pojo.Goods;
 import com.leyou.search.pojo.SearchRequest;
+import com.leyou.search.pojo.SearchResult;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
 import org.elasticsearch.index.query.Operator;
 import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.search.aggregations.Aggregation;
+import org.elasticsearch.search.aggregations.AggregationBuilders;
+import org.elasticsearch.search.aggregations.bucket.terms.LongTerms;
+import org.omg.CORBA.OBJ_ADAPTER;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.elasticsearch.core.aggregation.AggregatedPage;
 import org.springframework.data.elasticsearch.core.query.FetchSourceFilter;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 public class SearchService {
@@ -137,7 +144,7 @@ public class SearchService {
      * @param searchRequest
      * @return
      */
-    public PageResult<Goods> search(SearchRequest searchRequest) {
+    public SearchResult search(SearchRequest searchRequest) {
         //判断查询条件是否为空
         if (StringUtils.isBlank(searchRequest.getKey())){
             return null;
@@ -150,9 +157,53 @@ public class SearchService {
         queryBuilder.withPageable(PageRequest.of(searchRequest.getPage()-1,searchRequest.getSize()));
         //添加结果集过滤，不需要显示的字段不用 需要:id,subTitle,skus
         queryBuilder.withSourceFilter(new FetchSourceFilter(new String[]{"id","subTitle","skus"},null));
+        //添加分类和品牌的聚合
+        String brandAggName = "brands";
+        String categoryAggName = "categories";
+        queryBuilder.addAggregation(AggregationBuilders.terms(brandAggName).field("brandId"));
+        queryBuilder.addAggregation(AggregationBuilders.terms(categoryAggName).field("cid3"));
+
         //执行查询获取结果集
-        Page<Goods> goodsPage = this.goodsRepository.search(queryBuilder.build());
+        AggregatedPage<Goods> goodsPage = (AggregatedPage<Goods>)this.goodsRepository.search(queryBuilder.build());
+        //解析聚合的结果集
+     List<Brand> brands = getBrandAggReuslt(goodsPage.getAggregation(brandAggName));
+     List<Map<String , Object>> categories = getcategoryAggReuslt(goodsPage.getAggregation(categoryAggName));
+
         //返回分页结果集
-        return new PageResult<>(goodsPage.getTotalElements(),goodsPage.getTotalPages(),goodsPage.getContent());
+        return new SearchResult(goodsPage.getTotalElements(),goodsPage.getTotalPages(),goodsPage.getContent(),categories,brands);
+    }
+
+    /**
+     * 解析分类的聚合结果集
+     * @param aggregation
+     * @return
+     */
+    private List<Map<String, Object>> getcategoryAggReuslt(Aggregation aggregation) {
+        //强转成longterm
+        LongTerms terms =(LongTerms)aggregation;
+        //获取桶
+       return terms.getBuckets().stream().map(bucket -> {
+            Map<String,Object> map = new HashMap();
+            Long id = bucket.getKeyAsNumber().longValue();
+            List<String> names = this.categoryClient.queryNamesByIds(Arrays.asList(id));
+            map.put("id",id);
+            map.put("name",names.get(0));
+            return map;
+        }).collect(Collectors.toList());
+    }
+
+    /**
+     * 解析品牌的聚合结果集
+     * @param aggregation
+     * @return
+     */
+    private List<Brand> getBrandAggReuslt(Aggregation aggregation) {
+        //强转成longterm
+        LongTerms terms =(LongTerms)aggregation;
+        //获取桶
+        return terms.getBuckets().stream().map(bucket -> {
+            Long id = bucket.getKeyAsNumber().longValue();
+            return this.brandClient.queryBrandById(id);
+        }).collect(Collectors.toList());
     }
 }
