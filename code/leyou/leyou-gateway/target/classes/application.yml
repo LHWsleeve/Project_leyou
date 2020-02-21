@@ -10,3 +10,4 @@ zuul:
   prefix: /api
   routes:
     item-service: /item/** #冒号前的item-service就是微服务名，后面是添加商品微服务的路由
+    search-service: /search/**

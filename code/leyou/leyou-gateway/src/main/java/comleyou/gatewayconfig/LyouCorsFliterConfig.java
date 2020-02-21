@@ -16,7 +16,7 @@ public class LyouCorsFliterConfig {
         //允许跨域的域名，可以指设置多个。*：表示所有域名，如果携带cookie一定不能写*
         corsConfiguration.addAllowedOrigin("http://manage.leyou.com");
 //        corsConfiguration.addAllowedOrigin("http://api.leyou.com");
-//        corsConfiguration.addAllowedOrigin("http://www.leyou.com");
+        corsConfiguration.addAllowedOrigin("http://www.leyou.com");
         //允许写代cookie
         corsConfiguration.setAllowCredentials(true);
         //允许所有i请求方式跨域访问
