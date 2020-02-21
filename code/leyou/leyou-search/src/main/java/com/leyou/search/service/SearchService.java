@@ -62,7 +62,7 @@ public class SearchService {
             Map<String, Object> skuMap = new HashMap<>();
             skuMap.put("id",sku.getId());
             skuMap.put("title",sku.getTitle());
-            skuMap.put("image",StringUtils.isNotBlank(sku.getImages())?"":StringUtils.split(sku.getImages(),",")[0]);
+            skuMap.put("image",StringUtils.isNotBlank(sku.getImages())?StringUtils.split(sku.getImages(),",")[0]:"");
             skuMap.put("price",sku.getPrice());
             skusMapList.add(skuMap);
         });
