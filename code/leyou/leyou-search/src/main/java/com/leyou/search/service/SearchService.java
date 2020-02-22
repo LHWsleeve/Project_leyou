@@ -13,9 +13,8 @@ import com.leyou.search.pojo.SearchRequest;
 import com.leyou.search.pojo.SearchResult;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
-import org.elasticsearch.index.query.MatchQueryBuilder;
-import org.elasticsearch.index.query.Operator;
-import org.elasticsearch.index.query.QueryBuilders;
+import org.apache.lucene.queryparser.xml.builders.BooleanQueryBuilder;
+import org.elasticsearch.index.query.*;
 import org.elasticsearch.search.aggregations.Aggregation;
 import org.elasticsearch.search.aggregations.AggregationBuilders;
 import org.elasticsearch.search.aggregations.bucket.terms.LongTerms;
@@ -138,6 +137,7 @@ public class SearchService {
         return result;
     }
 
+
     /**
      * 完成基本查询功能
      * @param searchRequest
@@ -151,7 +151,9 @@ public class SearchService {
         //自定义查询构建器
         NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
         //添加查询条件
-        MatchQueryBuilder basicquery = QueryBuilders.matchQuery("all", searchRequest.getKey()).operator(Operator.AND);
+//        MatchQueryBuilder basicquery = QueryBuilders.matchQuery("all", searchRequest.getKey()).operator(Operator.AND);
+        BoolQueryBuilder basicquery =buildBasicQuery(searchRequest);
+
         queryBuilder.withQuery(basicquery);
         //添加分页,行号从0开始
         queryBuilder.withPageable(PageRequest.of(searchRequest.getPage()-1,searchRequest.getSize()));
@@ -179,15 +181,44 @@ public class SearchService {
     }
 
     /**
+     * 构建boolquery
+     * @param searchRequest
+     * @return
+     */
+    private BoolQueryBuilder buildBasicQuery(SearchRequest searchRequest) {
+        //初始化bool查询
+        BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();
+        //添加基本查询条件
+        boolQueryBuilder.must(QueryBuilders.matchQuery("all",searchRequest.getKey()).operator(Operator.AND));
+        //添加过滤
+        for (Map.Entry<String, String> entry : searchRequest.getFilter().entrySet()) {
+            System.out.println(entry.getKey()+":"+entry.getValue());
+            String key = entry.getKey();
+            if (StringUtils.equals(key,"品牌")){
+                key="brandId";
+            }else if (StringUtils.equals(key,"分类")){
+                key="cid3";
+            }else {
+                key="specs."+key+".keyword";
+            }
+            boolQueryBuilder.filter(QueryBuilders.termQuery(key,entry.getValue()));
+        }
+        return boolQueryBuilder;
+    }
+
+    /**
      *规格参数的聚合
      * @param id
      * @param basicquery
      * @return
      */
-    private List<Map<String, Object>> getParamAggName(Long id, MatchQueryBuilder basicquery) {
+    private List<Map<String, Object>> getParamAggName(Long id, QueryBuilder basicquery) {
        //查询聚合的规格参数
         List<SpecParam> params = this.specificationClient.querySpecParams(null, id, null, true);
         NativeSearchQueryBuilder queryBuilder=new NativeSearchQueryBuilder();
+        //添加基本查询条件
+        queryBuilder.withQuery(basicquery);
+
         //添加规格参数的聚合
         params.forEach(specParam -> {
             queryBuilder.addAggregation(AggregationBuilders.terms(specParam.getName()).field("specs."+specParam.getName()+".keyword"));
