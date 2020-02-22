@@ -45,7 +45,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/pojo/api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/leyou-goods-web/src/main/java/com/leyou/goods" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -60,20 +60,21 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\leyou\leyou-item" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.leyou.search" />
       <recent name="com.leyou.search.client" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\leyou\leyou-item\leyou-item-interface\src\main\java\com\leyou\item\pojo\api" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.leyou.item.pojo.api" />
       <recent name="com.leyou.item.mapper" />
       <recent name="com.leyou.gatewayconfig" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\leyou\leyou-item" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\leyou\leyou-goods-web\src\main\java\com\leyou\goods" />
+      <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\leyou\leyou-item\leyou-item-interface\src\main\java\com\leyou\item\pojo\api" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -159,10 +160,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.LeyouGoodsApplication" />
+        <item itemvalue="Spring Boot.LeyouItemApplication" />
         <item itemvalue="Spring Boot.LeyouGatewayApplication" />
         <item itemvalue="Spring Boot.LeyouSearchApplication" />
         <item itemvalue="Spring Boot.LeyouUploadAppilcation" />
-        <item itemvalue="Spring Boot.LeyouItemApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +215,7 @@
       <workItem from="1581834295250" duration="4865000" />
       <workItem from="1581843954445" duration="596000" />
       <workItem from="1581860792747" duration="25644000" />
-      <workItem from="1582200262521" duration="39211000" />
+      <workItem from="1582200262521" duration="41931000" />
     </task>
     <servers />
   </component>
@@ -270,45 +271,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582079999624" />
-    <state width="1548" height="361" key="GridCell.Tab.0.bottom" timestamp="1582376810782">
+    <state width="1548" height="244" key="GridCell.Tab.0.bottom" timestamp="1582379751945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="361" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582376810782" />
+    <state width="1548" height="244" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582379751945" />
     <state width="1578" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487185" />
-    <state width="1548" height="361" key="GridCell.Tab.0.center" timestamp="1582376810781">
+    <state width="1548" height="244" key="GridCell.Tab.0.center" timestamp="1582379751945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="361" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582376810781" />
+    <state width="1548" height="244" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582379751945" />
     <state width="1578" height="341" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487183" />
-    <state width="1548" height="361" key="GridCell.Tab.0.left" timestamp="1582376810779">
+    <state width="1548" height="244" key="GridCell.Tab.0.left" timestamp="1582379751944">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="361" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582376810779" />
+    <state width="1548" height="244" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582379751944" />
     <state width="1578" height="341" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487182" />
-    <state width="1548" height="361" key="GridCell.Tab.0.right" timestamp="1582376810782">
+    <state width="1548" height="244" key="GridCell.Tab.0.right" timestamp="1582379751945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="361" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582376810782" />
+    <state width="1548" height="244" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582379751945" />
     <state width="1578" height="341" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487184" />
-    <state width="1548" height="361" key="GridCell.Tab.1.bottom" timestamp="1582376810785">
+    <state width="1548" height="244" key="GridCell.Tab.1.bottom" timestamp="1582379751945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="361" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582376810785" />
+    <state width="1548" height="244" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582379751945" />
     <state width="1298" height="288" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203418530" />
-    <state width="1548" height="361" key="GridCell.Tab.1.center" timestamp="1582376810784">
+    <state width="1548" height="244" key="GridCell.Tab.1.center" timestamp="1582379751945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="361" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582376810784" />
+    <state width="1548" height="244" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582379751945" />
     <state width="1298" height="288" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203418530" />
-    <state width="1548" height="361" key="GridCell.Tab.1.left" timestamp="1582376810783">
+    <state width="1548" height="244" key="GridCell.Tab.1.left" timestamp="1582379751945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="361" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582376810783" />
+    <state width="1548" height="244" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582379751945" />
     <state width="1298" height="288" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203418530" />
-    <state width="1548" height="361" key="GridCell.Tab.1.right" timestamp="1582376810785">
+    <state width="1548" height="244" key="GridCell.Tab.1.right" timestamp="1582379751945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="361" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582376810785" />
+    <state width="1548" height="244" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582379751945" />
     <state width="1298" height="288" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203418530" />
     <state width="1548" height="425" key="GridCell.Tab.2.bottom" timestamp="1582372532077">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -346,10 +347,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="273" key="extract.method.dialog/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581837259968" />
-    <state x="567" y="70" width="786" height="900" key="find.popup" timestamp="1582180610275">
+    <state x="567" y="70" width="786" height="900" key="find.popup" timestamp="1582379541026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="70" width="786" height="900" key="find.popup/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582180610275" />
+    <state x="567" y="70" width="786" height="900" key="find.popup/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582379541026" />
     <state x="719" y="190" width="874" height="598" key="new project wizard" timestamp="1582369459574">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
