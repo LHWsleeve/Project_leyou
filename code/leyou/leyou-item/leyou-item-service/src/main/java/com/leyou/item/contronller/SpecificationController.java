@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.swing.*;
 import java.util.List;
 
 @Controller
@@ -28,11 +27,25 @@ public class SpecificationController {
      * @return
      */
     @GetMapping("/params")
-    public ResponseEntity<List<SpecParam>> querySpecParams(@RequestParam(value = "gid",required = false)Long gid){
-        List<SpecParam> params =this.specificationService.querySpecParams(gid);
+    public ResponseEntity<List<SpecParam>> querySpecParams(
+            @RequestParam(value = "gid",required = false)Long gid,
+            @RequestParam(value = "cid",required = false)Long cid,
+            @RequestParam(value = "generic",required = false)Boolean generic,
+            @RequestParam(value = "searching",required = false)Boolean searching
+    ){
+        List<SpecParam> params =this.specificationService.querySpecParams(gid,cid,generic,searching);
         if (CollectionUtils.isEmpty(params)){
             ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
         return ResponseEntity.ok(params);
+    }
+
+    @GetMapping("/group/param/{cid}")
+    public ResponseEntity<List<SpecGroup>> queryGroupWithParam(@PathVariable("cid")Long cid){
+     List<SpecGroup> groups = this.specificationService.queryGroupWithParam(cid);
+        if (CollectionUtils.isEmpty(groups)){
+            ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+        return ResponseEntity.ok(groups);
     }
 }

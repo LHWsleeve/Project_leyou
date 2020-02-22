@@ -7,6 +7,7 @@ import com.leyou.item.pojo.SpecParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.security.acl.Group;
 import java.util.List;
 
 @Service
@@ -33,9 +34,21 @@ public class SpecificationService {
      * @param gid
      * @return
      */
-    public List<SpecParam> querySpecParams(Long gid) {
+    public List<SpecParam> querySpecParams(Long gid,Long cid,Boolean generic, Boolean searching) {
         SpecParam record = new SpecParam();
         record.setGroupId(gid);
+        record.setCid(cid);
+        record.setGeneric(generic);
+        record.setSearching(searching);
         return this.specParamMapper.select(record);
+    }
+
+    public List<SpecGroup> queryGroupWithParam(Long cid) {
+        List<SpecGroup> groups = this.queryGroupsByCid(cid);
+        groups.forEach(specGroup -> {
+            List<SpecParam> params = this.querySpecParams(specGroup.getId(), null, null, null);
+            specGroup.setParams(params);
+        });
+        return groups;
     }
 }

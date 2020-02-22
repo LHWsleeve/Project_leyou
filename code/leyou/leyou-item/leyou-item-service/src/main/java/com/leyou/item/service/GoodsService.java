@@ -169,4 +169,8 @@ public class GoodsService {
         this.spuMapper.updateByPrimaryKeySelective(spuBo);
         this.spuDetailMapper.updateByPrimaryKeySelective(spuBo.getSpuDetail());
     }
+
+    public Spu querySpuById(Long spuId) {
+        return  this.spuMapper.selectByPrimaryKey(spuId);
+    }
 }
