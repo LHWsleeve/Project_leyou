@@ -67,3 +67,10 @@
 2020/02/22 16:12:04 [error] 496#8160: *9053 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: api.leyou.com, request: "OPTIONS /api/search/page HTTP/1.1", upstream: "http://127.0.0.1:8080/api/search/page", host: "api.leyou.com", referrer: "http://www.leyou.com/search.html?key=%E6%89%8B%E6%9C%BA"
 2020/02/22 16:12:05 [error] 496#8160: *9106 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: api.leyou.com, request: "GET /api/auth/verify HTTP/1.1", upstream: "http://127.0.0.1:8080/api/auth/verify", host: "api.leyou.com", referrer: "http://www.leyou.com/search.html?key=%E6%89%8B%E6%9C%BA"
 2020/02/22 20:15:55 [notice] 30068#2224: signal process started
+2020/02/23 15:59:34 [emerg] 32396#29264: duplicate location "/item" in C:\Users\liuha\Documents\GitHub\Project_leyou\tools\nginx-1.16.1/conf/nginx.conf:55
+2020/02/23 15:59:50 [emerg] 31936#26684: duplicate location "/item" in C:\Users\liuha\Documents\GitHub\Project_leyou\tools\nginx-1.16.1/conf/nginx.conf:55
+2020/02/23 16:00:40 [emerg] 12096#26924: duplicate location "/item" in C:\Users\liuha\Documents\GitHub\Project_leyou\tools\nginx-1.16.1/conf/nginx.conf:55
+2020/02/23 16:01:02 [emerg] 30976#29416: duplicate location "/item" in C:\Users\liuha\Documents\GitHub\Project_leyou\tools\nginx-1.16.1/conf/nginx.conf:55
+2020/02/23 16:03:13 [notice] 20312#4232: signal process started
+2020/02/23 16:03:13 [error] 20312#4232: OpenEvent("Global\ngx_reload_13572") failed (2: The system cannot find the file specified)
+2020/02/23 16:03:31 [notice] 28768#29840: signal process started

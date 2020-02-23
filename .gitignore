@@ -1,10 +1,7 @@
 
 code/leyou/src/main/java/leetcode/*
 code/leyou/leyou-upload/target/*
-code/leyou/leyou-upload/target/*
-code/leyou/leyou-item/leyou-item-service/target/*
 code/leyou/leyou-item/leyou-item-interface/target/*
-code/leyou/leyou-item/leyou-item-service/target/*
 code/leyou/leyou-item/leyou-item-service/target/*
 tools/nginx-1.16.1/logs/*
 tools/nginx-1.16.1/logs/*
@@ -13,7 +10,6 @@ tools/elasticsearch-6.3.0.tar.gz
 tools/elasticsearch-analysis-ik-6.3.0.zip
 tools/kibana-6.3.0-windows-x86_64.zip
 code/leyou/leyou-item/leyou-item-service/target/*
-code/leyou/leyou-item/leyou-item-service/target/classes/com/leyou/item/contronller/BrandController.class
-*.class
 code/leyou/leyou-search/target/*
 code/leyou/leyou-goods-web/target/*
+tools/nginx-1.16.1/html/item/*
