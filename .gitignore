@@ -16,3 +16,4 @@ code/leyou/leyou-item/leyou-item-service/target/*
 code/leyou/leyou-item/leyou-item-service/target/classes/com/leyou/item/contronller/BrandController.class
 *.class
 code/leyou/leyou-search/target/*
+code/leyou/leyou-goods-web/target/*
