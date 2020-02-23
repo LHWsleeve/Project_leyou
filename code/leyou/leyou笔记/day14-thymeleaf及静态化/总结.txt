@@ -1,0 +1,14 @@
+
+1.商品详情页
+	thymeleaf语法
+	1.引入thymeleaf启动器
+	2.关闭thymeleaf缓存：spring.thymeleaf.cache=false ctrl+shift+f9
+	3.th:text  th:utext th:each  ${} /*[[${数据模型}]]*/ 
+	4.页面数据的组织
+
+2.页面静态化
+	context：thymeleaf的运行上下文，存放数据模型
+	TemplateResolver：模板解析器，模板的位置，名称，后缀信息
+	TemplateEngine：模板解析引擎
+	templateEngine.process("item", context, printWriter)
+
