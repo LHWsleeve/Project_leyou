@@ -45,7 +45,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/leyou-goods-web/src/main/java/com/leyou/goods" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -205,7 +205,7 @@
       <workItem from="1581834295250" duration="4865000" />
       <workItem from="1581843954445" duration="596000" />
       <workItem from="1581860792747" duration="25644000" />
-      <workItem from="1582200262521" duration="54127000" />
+      <workItem from="1582200262521" duration="55410000" />
     </task>
     <servers />
   </component>
@@ -257,10 +257,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="423" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1581426558211" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1582079999624">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1582461115773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582079999624" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582461115773" />
     <state width="1548" height="230" key="GridCell.Tab.0.bottom" timestamp="1582445081909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

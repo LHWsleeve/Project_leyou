@@ -11,6 +11,7 @@
         <module name="itcast-service-consumer" />
         <module name="itcast-eureka" />
         <module name="http-demo" />
+        <module name="itcast-rabbitmq" />
         <module name="itcat_sringboot" />
         <module name="itcast-user" />
         <module name="itcast-zuul" />
@@ -20,6 +21,7 @@
       <module name="http-demo" target="1.8" />
       <module name="itcast-elasticsearch" target="1.8" />
       <module name="itcast-eureka" target="1.8" />
+      <module name="itcast-rabbitmq" target="1.8" />
       <module name="itcast-service-consumer" target="1.8" />
       <module name="itcast-service-provider" target="1.8" />
       <module name="itcast-user" target="1.8" />
@@ -32,6 +34,7 @@
       <module name="http-demo" options="-parameters" />
       <module name="itcast-elasticsearch" options="-parameters" />
       <module name="itcast-eureka" options="-parameters" />
+      <module name="itcast-rabbitmq" options="-parameters" />
       <module name="itcast-service-consumer" options="-parameters" />
       <module name="itcast-service-provider" options="-parameters" />
       <module name="itcast-user" options="-parameters" />
