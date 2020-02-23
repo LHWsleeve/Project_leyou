@@ -637,11 +637,11 @@
 		computed: {
 			sku(){
 				 const index = Object.values(this.indexes).join("_");
-				for (let i = 0; i <skus.length ; i++) {
-					if (skus[i].indexes==index)
-						return skus[i];
-				}
-				 // return this.skus.find(sku => sku.indexes == index);
+				// for (let i = 0; i <skus.length ; i++) {
+				// 	if (skus[i].indexes==index)
+				// 		return skus[i];
+				// }
+				 return this.skus.find(sku => sku.indexes == index);
 			},
 			images(){
 				return this.sku.images ? this.sku.images.split(",") : [];
