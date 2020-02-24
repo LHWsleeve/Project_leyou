@@ -13,3 +13,5 @@ code/leyou/leyou-item/leyou-item-service/target/*
 code/leyou/leyou-search/target/*
 code/leyou/leyou-goods-web/target/*
 tools/nginx-1.16.1/html/item/*
+*.class
+code/demo/itcast-rabbitmq/target/*
