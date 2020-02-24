@@ -21,8 +21,9 @@ public class Recv2 {
         Connection connection = ConnectionUtil.getConnection();
         // 获取通道
         Channel channel = connection.createChannel();
-        // 声明队列
-        channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+        // 声明队列，第二个参数是持久化参数，true/false。并且如果跟改了队列或交换机的声明参数，同时队列或交换机的名字一样，启动该会报错。
+        //这是由于，rabbitMQ在运行时会检查同名队列和交换机，若相同回复用。更改参数后无法复用
+        channel.queueDeclare(QUEUE_NAME, true, false, false, null);
         
         // 绑定队列到交换机，同时指定需要订阅的routing key。订阅 insert、update、delete
         channel.queueBind(QUEUE_NAME, EXCHANGE_NAME, "item.*");

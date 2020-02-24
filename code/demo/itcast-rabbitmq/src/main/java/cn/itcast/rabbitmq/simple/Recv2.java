@@ -32,7 +32,7 @@ public class Recv2 {
                 // body 即消息体
                 String msg = new String(body);
                 System.out.println(" [x] received : " + msg + "!");
-                // 手动进行ACK
+                // 手动进行ACK,固定写法（三次握手的实现）
                 channel.basicAck(envelope.getDeliveryTag(), false);
             }
         };

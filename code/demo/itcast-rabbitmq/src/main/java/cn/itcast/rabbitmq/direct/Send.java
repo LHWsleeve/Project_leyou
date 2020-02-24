@@ -20,7 +20,7 @@ public class Send {
         // 消息内容
         String message = "商品删除了， id = 1001";
         // 发送消息，并且指定routing key 为：insert ,代表新增商品
-        channel.basicPublish(EXCHANGE_NAME, "delete", null, message.getBytes());
+        channel.basicPublish(EXCHANGE_NAME, "insert", null, message.getBytes());
         System.out.println(" [商品服务：] Sent '" + message + "'");
 
         channel.close();
