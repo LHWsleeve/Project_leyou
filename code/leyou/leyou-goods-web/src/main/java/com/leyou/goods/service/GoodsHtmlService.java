@@ -35,4 +35,8 @@ public class GoodsHtmlService  {
         }
     }
 
+    public void deleteHtml(Long spuId) {
+        File file = new File("C:\\Users\\liuha\\Documents\\GitHub\\Project_leyou\\tools\\nginx-1.16.1\\html\\item\\" + spuId + ".html");
+        file.deleteOnExit();
+    }
 }

@@ -281,4 +281,14 @@ public class SearchService {
             return this.brandClient.queryBrandById(id);
         }).collect(Collectors.toList());
     }
+
+    public void saveIndex(Long spuId) throws IOException {
+        Spu spu = this.goodsClients.querySpuById(spuId);
+        Goods goods = this.buildGoods(spu);
+        this.goodsRepository.save(goods);
+    }
+
+    public void delete(Long spuId) {
+    this.goodsRepository.deleteById(spuId);
+    }
 }

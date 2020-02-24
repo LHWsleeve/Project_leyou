@@ -7,6 +7,8 @@ import com.leyou.item.mapper.*;
 import com.leyou.item.pojo.*;
 import com.leyou.item.pojo.bo.SpuBo;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.amqp.AmqpException;
+import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -36,7 +38,8 @@ public class GoodsService {
     private SkuMapper skuMapper;
     @Autowired
     private StockMapper stockMapper;
-
+    @Autowired
+    private AmqpTemplate amqpTemplate;
 
     /**
      * 分页查询spu
@@ -98,9 +101,19 @@ public class GoodsService {
         SpuDetail spuDetail = spuBo.getSpuDetail();
         spuDetail.setSpuId(spuBo.getId());
         this.spuDetailMapper.insertSelective(spuDetail);
+        //增加rbbitmq消息发送
+        sendMessage("insert",spuBo.getId());
 
         //ctrl+alt+m抽取方法
         saveSkuAndStock(spuBo);
+    }
+
+        private void sendMessage( String type, Long spuId) {
+        try {
+            this.amqpTemplate.convertAndSend("item."+type,spuId);
+        } catch (AmqpException e) {
+            e.printStackTrace();
+        }
     }
 
     private void saveSkuAndStock(SpuBo spuBo) {
@@ -168,6 +181,7 @@ public class GoodsService {
         spuBo.setLastUpdateTime(new Date());
         this.spuMapper.updateByPrimaryKeySelective(spuBo);
         this.spuDetailMapper.updateByPrimaryKeySelective(spuBo.getSpuDetail());
+        sendMessage("update",spuBo.getId());
     }
 
     public Spu querySpuById(Long spuId) {

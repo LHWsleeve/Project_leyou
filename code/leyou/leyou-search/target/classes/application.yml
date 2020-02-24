@@ -9,6 +9,13 @@ spring:
       cluster-name: elasticsearch
   jackson:
     default-property-inclusion: non_null #jackson响应json数据时忽略为null的字段
+  rabbitmq:
+    port: 5672
+    host: 192.168.29.128
+    virtual-host: /leyou
+    username: leyou
+    password: leyou
+
 eureka:
   client:
     service-url:
