@@ -18,8 +18,9 @@ public class MqDemo {
     @Test
     public void testSend() throws InterruptedException {
         String msg = "hello, Spring boot amqp";
+        //可以发送任何类型的对象，但是最终都会转成二进制
         this.amqpTemplate.convertAndSend("spring.test.exchange","a.b", msg);
         // 等待10秒后再结束
-        Thread.sleep(10000);
+//        Thread.sleep(10000);
     }
 }
