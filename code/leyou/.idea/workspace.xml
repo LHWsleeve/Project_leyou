@@ -45,10 +45,10 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tools/aliyun-java-sdk-dysmsapi/aliyun-java-sdk-dysmsapi-1.0.0.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/leyou-user/leyou-user-service/src/test/java/com/leyou/user/test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.1875" />
     <property name="project.structure.side.proportion" value="0.32416788" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
@@ -74,6 +74,7 @@
       <recent name="com.leyou.gatewayconfig" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\leyou\leyou-user\leyou-user-service\src\test\java\com\leyou\user\test" />
       <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\leyou\leyou-goods-web\src\main\java\com\leyou\goods" />
       <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\leyou\leyou-item\leyou-item-interface\src\main\java\com\leyou\item\pojo\api" />
     </key>
@@ -88,9 +89,22 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LeyouUserApplication">
-    <configuration name="item.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/leyou/leyou-goods-web/templates/item.html" useBuiltInWebServerPort="true">
-      <method v="2" />
+  <component name="RunManager" selected="JUnit.RedisTest.testRedis">
+    <configuration name="RedisTest.testRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leyou-user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leyou.user.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.leyou.user.test" />
+      <option name="MAIN_CLASS_NAME" value="com.leyou.user.test.RedisTest" />
+      <option name="METHOD_NAME" value="testRedis" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="LeyouGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="leyou-gateway" />
@@ -177,19 +191,19 @@
       <item itemvalue="Spring Boot.LeyouSearchApplication" />
       <item itemvalue="Spring Boot.LeyouItemApplication" />
       <item itemvalue="Spring Boot.LeyouGoodsApplication" />
-      <item itemvalue="JavaScript Debug.item.html" />
       <item itemvalue="Spring Boot.LeyouRegistryApplication" />
       <item itemvalue="Spring Boot.LeyouUploadAppilcation" />
       <item itemvalue="Spring Boot.LeyouUserApplication" />
       <item itemvalue="Spring Boot.LeyouSmsApplication" />
+      <item itemvalue="JUnit.RedisTest.testRedis" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RedisTest.testRedis" />
         <item itemvalue="Spring Boot.LeyouGatewayApplication" />
         <item itemvalue="Spring Boot.LeyouSearchApplication" />
         <item itemvalue="Spring Boot.LeyouGoodsApplication" />
         <item itemvalue="Spring Boot.LeyouItemApplication" />
-        <item itemvalue="JavaScript Debug.item.html" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +250,7 @@
       <workItem from="1581834295250" duration="4865000" />
       <workItem from="1581843954445" duration="596000" />
       <workItem from="1581860792747" duration="25644000" />
-      <workItem from="1582200262521" duration="78000000" />
+      <workItem from="1582200262521" duration="79968000" />
     </task>
     <servers />
   </component>
@@ -252,10 +266,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582179063622" />
-    <state x="552" y="178" key="#Project_Structure" timestamp="1582612708807">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1582635422877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582612708807" />
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582635422877" />
     <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1581323555603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -300,45 +314,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="420" y="205" key="FileChooserDialogImpl/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582619801108" />
-    <state width="1548" height="300" key="GridCell.Tab.0.bottom" timestamp="1582612928186">
+    <state width="1548" height="226" key="GridCell.Tab.0.bottom" timestamp="1582635530376">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="300" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582612928186" />
+    <state width="1548" height="226" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582635530376" />
     <state width="1578" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487185" />
-    <state width="1548" height="300" key="GridCell.Tab.0.center" timestamp="1582612928186">
+    <state width="1548" height="226" key="GridCell.Tab.0.center" timestamp="1582635530375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="300" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582612928186" />
+    <state width="1548" height="226" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582635530375" />
     <state width="1578" height="341" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487183" />
-    <state width="1548" height="300" key="GridCell.Tab.0.left" timestamp="1582612928186">
+    <state width="1548" height="226" key="GridCell.Tab.0.left" timestamp="1582635530375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="300" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582612928186" />
+    <state width="1548" height="226" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582635530375" />
     <state width="1578" height="341" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487182" />
-    <state width="1548" height="300" key="GridCell.Tab.0.right" timestamp="1582612928186">
+    <state width="1548" height="226" key="GridCell.Tab.0.right" timestamp="1582635530375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="300" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582612928186" />
+    <state width="1548" height="226" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582635530375" />
     <state width="1578" height="341" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487184" />
-    <state width="1548" height="300" key="GridCell.Tab.1.bottom" timestamp="1582612928186">
+    <state width="1548" height="226" key="GridCell.Tab.1.bottom" timestamp="1582635530376">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="300" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582612928186" />
+    <state width="1548" height="226" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582635530376" />
     <state width="1298" height="288" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203418530" />
-    <state width="1548" height="300" key="GridCell.Tab.1.center" timestamp="1582612928186">
+    <state width="1548" height="226" key="GridCell.Tab.1.center" timestamp="1582635530376">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="300" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582612928186" />
+    <state width="1548" height="226" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582635530376" />
     <state width="1298" height="288" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203418530" />
-    <state width="1548" height="300" key="GridCell.Tab.1.left" timestamp="1582612928186">
+    <state width="1548" height="226" key="GridCell.Tab.1.left" timestamp="1582635530376">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="300" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582612928186" />
+    <state width="1548" height="226" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582635530376" />
     <state width="1298" height="288" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203418530" />
-    <state width="1548" height="300" key="GridCell.Tab.1.right" timestamp="1582612928186">
+    <state width="1548" height="226" key="GridCell.Tab.1.right" timestamp="1582635530376">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="300" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582612928186" />
+    <state width="1548" height="226" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582635530376" />
     <state width="1298" height="288" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203418530" />
     <state width="1548" height="230" key="GridCell.Tab.2.bottom" timestamp="1582444525001">
       <screen x="0" y="0" width="1920" height="1040" />
