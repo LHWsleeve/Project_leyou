@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/itcast-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/itcast-elasticsearch/pom.xml" />
         <option value="$PROJECT_DIR$/itcast-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/dysms-demo/pom.xml" />
       </list>
     </option>
   </component>

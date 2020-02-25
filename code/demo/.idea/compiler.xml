@@ -13,11 +13,13 @@
         <module name="http-demo" />
         <module name="itcast-rabbitmq" />
         <module name="itcat_sringboot" />
+        <module name="dysms-demo" />
         <module name="itcast-user" />
         <module name="itcast-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dysms-demo" target="1.5" />
       <module name="http-demo" target="1.8" />
       <module name="itcast-elasticsearch" target="1.8" />
       <module name="itcast-eureka" target="1.8" />

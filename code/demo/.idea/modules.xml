@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/dysms-demo/dysms-demo.iml" filepath="$PROJECT_DIR$/dysms-demo/dysms-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/http-demo/http-demo.iml" filepath="$PROJECT_DIR$/http-demo/http-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/itcast-elasticsearch/itcast-elasticsearch.iml" filepath="$PROJECT_DIR$/itcast-elasticsearch/itcast-elasticsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/itcast-eureka/itcast-eureka.iml" filepath="$PROJECT_DIR$/itcast-eureka/itcast-eureka.iml" />
