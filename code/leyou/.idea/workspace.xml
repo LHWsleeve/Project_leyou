@@ -89,7 +89,23 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RedisTest.testRedis">
+  <component name="RunManager" selected="JUnit.RedisTest.testRedis2">
+    <configuration name="RedisTest.testHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leyou-user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leyou.user.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.leyou.user.test" />
+      <option name="MAIN_CLASS_NAME" value="com.leyou.user.test.RedisTest" />
+      <option name="METHOD_NAME" value="testHash" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RedisTest.testRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leyou-user-service" />
       <extension name="coverage">
@@ -106,6 +122,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RedisTest.testRedis2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leyou-user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leyou.user.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.leyou.user.test" />
+      <option name="MAIN_CLASS_NAME" value="com.leyou.user.test.RedisTest" />
+      <option name="METHOD_NAME" value="testRedis2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LeyouGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="leyou-gateway" />
       <extension name="coverage">
@@ -115,32 +147,6 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="comleyou.LeyouGatewayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LeyouGoodsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="leyou-goods-web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leyou.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.LeyouGoodsApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LeyouItemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="leyou-item-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leyou.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.LeyouItemApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,21 +195,21 @@
     <list>
       <item itemvalue="Spring Boot.LeyouGatewayApplication" />
       <item itemvalue="Spring Boot.LeyouSearchApplication" />
-      <item itemvalue="Spring Boot.LeyouItemApplication" />
-      <item itemvalue="Spring Boot.LeyouGoodsApplication" />
       <item itemvalue="Spring Boot.LeyouRegistryApplication" />
       <item itemvalue="Spring Boot.LeyouUploadAppilcation" />
       <item itemvalue="Spring Boot.LeyouUserApplication" />
       <item itemvalue="Spring Boot.LeyouSmsApplication" />
       <item itemvalue="JUnit.RedisTest.testRedis" />
+      <item itemvalue="JUnit.RedisTest.testRedis2" />
+      <item itemvalue="JUnit.RedisTest.testHash" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RedisTest.testRedis2" />
+        <item itemvalue="JUnit.RedisTest.testHash" />
         <item itemvalue="JUnit.RedisTest.testRedis" />
         <item itemvalue="Spring Boot.LeyouGatewayApplication" />
         <item itemvalue="Spring Boot.LeyouSearchApplication" />
-        <item itemvalue="Spring Boot.LeyouGoodsApplication" />
-        <item itemvalue="Spring Boot.LeyouItemApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +256,7 @@
       <workItem from="1581834295250" duration="4865000" />
       <workItem from="1581843954445" duration="596000" />
       <workItem from="1581860792747" duration="25644000" />
-      <workItem from="1582200262521" duration="79968000" />
+      <workItem from="1582200262521" duration="80586000" />
     </task>
     <servers />
   </component>
@@ -314,25 +320,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="420" y="205" key="FileChooserDialogImpl/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582619801108" />
-    <state width="1548" height="226" key="GridCell.Tab.0.bottom" timestamp="1582635530376">
+    <state width="1877" height="196" key="GridCell.Tab.0.bottom" timestamp="1582636678278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="226" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582635530376" />
+    <state width="1877" height="196" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582636678278" />
     <state width="1578" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487185" />
-    <state width="1548" height="226" key="GridCell.Tab.0.center" timestamp="1582635530375">
+    <state width="1877" height="196" key="GridCell.Tab.0.center" timestamp="1582636678278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="226" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582635530375" />
+    <state width="1877" height="196" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582636678278" />
     <state width="1578" height="341" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487183" />
-    <state width="1548" height="226" key="GridCell.Tab.0.left" timestamp="1582635530375">
+    <state width="1877" height="196" key="GridCell.Tab.0.left" timestamp="1582636678278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="226" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582635530375" />
+    <state width="1877" height="196" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582636678278" />
     <state width="1578" height="341" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487182" />
-    <state width="1548" height="226" key="GridCell.Tab.0.right" timestamp="1582635530375">
+    <state width="1877" height="196" key="GridCell.Tab.0.right" timestamp="1582636678278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="226" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582635530375" />
+    <state width="1877" height="196" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582636678278" />
     <state width="1578" height="341" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487184" />
     <state width="1548" height="226" key="GridCell.Tab.1.bottom" timestamp="1582635530376">
       <screen x="0" y="0" width="1920" height="1040" />
