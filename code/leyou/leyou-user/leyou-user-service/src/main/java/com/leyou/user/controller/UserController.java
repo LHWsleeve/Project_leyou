@@ -31,9 +31,10 @@ public class UserController {
         return ResponseEntity.ok(b);
     }
 
-    @PostMapping("code")
-    public ResponseEntity<Void> verifyCode(@RequestParam("phone")String phone){
-       this.userService.verifyCode(phone);
-       return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    @PostMapping("/code")
+    public ResponseEntity<String> verifyCode(@RequestParam("phone")String phone){
+        this.userService.verifyCode(phone);
+         String s ="发送成功";
+        return ResponseEntity.ok(s);
     }
 }

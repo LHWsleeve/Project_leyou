@@ -11,6 +11,12 @@ spring:
     password: 123456
   redis:
     host: 192.168.29.128
+  rabbitmq:
+    port: 5672
+    host: 192.168.29.128
+    virtual-host: /leyou
+    username: leyou
+    password: leyou
 eureka:
   client:
     service-url:
