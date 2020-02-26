@@ -50,4 +50,13 @@ public class UserController {
         String s = "register发送成功";
         return ResponseEntity.ok(s);
     }
+
+    @GetMapping("query")
+    public ResponseEntity<User> queryUser(@RequestParam("username")String username,@RequestParam("password")String password){
+        User user =this.userService.queryUser(username,password);
+        if (user==null){
+            return ResponseEntity.badRequest().build();
+        }
+        return ResponseEntity.ok(user);
+    }
 }

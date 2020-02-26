@@ -82,4 +82,21 @@ public class UserService {
         //验证成功之后删除验证码
         this.stringRedisTemplate.delete(key_prefix+user.getPhone());
     }
+
+    public User queryUser(String username, String password) {
+        //根据用户名查询用户
+        User record = new User();
+        record.setUsername(username);
+        User user = this.userMapper.selectOne(record);
+        //对用户输入的密码加盐加密
+        if (user==null){
+            return null;
+        }
+        password = CodecUtils.md5Hex(password, user.getSalt());
+        //判断用户输入的密码是否正确
+        if (!StringUtils.equals(password,user.getPassword())){
+            return null;
+        }
+        return user;
+    }
 }
