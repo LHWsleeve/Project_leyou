@@ -1,10 +1,14 @@
 package com.leyou.user.controller;
 
+import com.leyou.user.pojo.User;
 import com.leyou.user.service.UserService;
+import org.bouncycastle.voms.VOMSAttribute;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.ServletRequestBindingException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -35,6 +39,13 @@ public class UserController {
     public ResponseEntity<String> verifyCode(@RequestParam("phone")String phone){
         this.userService.verifyCode(phone);
          String s ="发送成功";
+        return ResponseEntity.ok(s);
+    }
+
+    @PostMapping("register")
+    public ResponseEntity<String> regidter(User user, @RequestParam("code")String codde){
+        this.userService.register(user,codde);
+        String s = "register发送成功";
         return ResponseEntity.ok(s);
     }
 }

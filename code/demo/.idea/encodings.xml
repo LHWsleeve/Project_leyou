@@ -10,6 +10,7 @@
     <file url="file://$PROJECT_DIR$/itcast-service-provider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/itcast-user/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/itcast-zuul/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itcast-zuul/src/main/resources/application.yml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/itcat_sringboot/src/main/java" charset="UTF-8" />
   </component>
 </project>
