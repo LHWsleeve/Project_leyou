@@ -52,7 +52,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.1875" />
-    <property name="project.structure.side.proportion" value="0.32416788" />
+    <property name="project.structure.side.proportion" value="0.36517718" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="ReactorSettings">
@@ -289,7 +289,7 @@
       <workItem from="1581834295250" duration="4865000" />
       <workItem from="1581843954445" duration="596000" />
       <workItem from="1581860792747" duration="25644000" />
-      <workItem from="1582200262521" duration="88664000" />
+      <workItem from="1582200262521" duration="89896000" />
     </task>
     <servers />
   </component>
@@ -305,10 +305,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582179063622" />
-    <state x="552" y="178" key="#Project_Structure" timestamp="1582693269893">
+    <state x="552" y="178" width="907" height="683" key="#Project_Structure" timestamp="1582698085088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582693269893" />
+    <state x="552" y="178" width="907" height="683" key="#Project_Structure/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582698085088" />
     <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1581323555603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -349,10 +349,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="234" key="DetectedRootsChooserDialog/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582615943944" />
-    <state x="420" y="205" key="FileChooserDialogImpl" timestamp="1582619801108">
+    <state x="420" y="205" key="FileChooserDialogImpl" timestamp="1582697566754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="420" y="205" key="FileChooserDialogImpl/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582619801108" />
+    <state x="420" y="205" key="FileChooserDialogImpl/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582697566754" />
     <state width="1548" height="202" key="GridCell.Tab.0.bottom" timestamp="1582695950247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

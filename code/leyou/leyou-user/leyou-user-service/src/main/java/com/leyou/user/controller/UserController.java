@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.validation.Valid;
+
 @Controller
 public class UserController {
     @Autowired
@@ -43,7 +45,7 @@ public class UserController {
     }
 
     @PostMapping("register")
-    public ResponseEntity<String> regidter(User user, @RequestParam("code")String codde){
+    public ResponseEntity<String> regidter(@Valid User user, @RequestParam("code")String codde){
         this.userService.register(user,codde);
         String s = "register发送成功";
         return ResponseEntity.ok(s);
