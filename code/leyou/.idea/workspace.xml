@@ -47,10 +47,10 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/leyou-user/leyou-user-service/src/main/java/com/leyou/user/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/leyou-auth/leyou-auth-service/src/main/java/com/leyou/utils" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.1875" />
     <property name="project.structure.side.proportion" value="0.36517718" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
@@ -79,11 +79,11 @@
       <recent name="com.leyou.gatewayconfig" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\leyou\leyou-auth\leyou-auth-service\src\main\java\com\leyou\utils" />
       <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\leyou\leyou-user\leyou-user-service\src\main\java\com\leyou\user\utils" />
       <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\leyou\leyou-sms\src\main\java\com\leyou\sms\utils" />
       <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\leyou\leyou-common\src\main\java\com\leyou\common\pojo\utils" />
       <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\leyou\leyou-user\leyou-user-service\src\test\java\com\leyou\user\test" />
-      <recent name="C:\Users\liuha\Documents\GitHub\Project_leyou\code\leyou\leyou-goods-web\src\main\java\com\leyou\goods" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.leyou.sms.utils" />
@@ -96,34 +96,32 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LeyouSmsApplication">
-    <configuration name="RedisTest.testHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leyou-user-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leyou.user.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.leyou.user.test" />
-      <option name="MAIN_CLASS_NAME" value="com.leyou.user.test.RedisTest" />
-      <option name="METHOD_NAME" value="testHash" />
+  <component name="RunManager" selected="JUnit.JwtTest.testParseToken">
+    <configuration name="JwtTest.testGenerateToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leyou-auth-service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JwtTest" />
+      <option name="METHOD_NAME" value="testGenerateToken" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisTest.testRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leyou-user-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leyou.user.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.leyou.user.test" />
-      <option name="MAIN_CLASS_NAME" value="com.leyou.user.test.RedisTest" />
-      <option name="METHOD_NAME" value="testRedis" />
+    <configuration name="JwtTest.testParseToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leyou-auth-service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JwtTest" />
+      <option name="METHOD_NAME" value="testParseToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtTest.testRsa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leyou-auth-service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JwtTest" />
+      <option name="METHOD_NAME" value="testRsa" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,6 +139,13 @@
       <option name="MAIN_CLASS_NAME" value="com.leyou.user.test.RedisTest" />
       <option name="METHOD_NAME" value="testRedis2" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeyouAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="leyou-auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.LeyouAuthApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -179,19 +184,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeyouSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="leyou-search" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leyou.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.LeyouSearchApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LeyouSmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="leyou-sms" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.LeyouSmsApplication" />
@@ -214,9 +206,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.RedisTest.testRedis" />
       <item itemvalue="JUnit.RedisTest.testRedis2" />
-      <item itemvalue="JUnit.RedisTest.testHash" />
       <item itemvalue="Spring Boot.LeyouRegistryApplication" />
       <item itemvalue="Spring Boot.LeyouUploadAppilcation" />
       <item itemvalue="Spring Boot.LeyouUserApplication" />
@@ -224,15 +214,18 @@
       <item itemvalue="Spring Boot.LeyouItemApplication" />
       <item itemvalue="Spring Boot.LeyouGoodsApplication" />
       <item itemvalue="Spring Boot.LeyouGatewayApplication" />
-      <item itemvalue="Spring Boot.LeyouSearchApplication" />
+      <item itemvalue="Spring Boot.LeyouAuthApplication" />
+      <item itemvalue="JUnit.JwtTest.testRsa" />
+      <item itemvalue="JUnit.JwtTest.testGenerateToken" />
+      <item itemvalue="JUnit.JwtTest.testParseToken" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JwtTest.testParseToken" />
+        <item itemvalue="JUnit.JwtTest.testGenerateToken" />
+        <item itemvalue="JUnit.JwtTest.testRsa" />
         <item itemvalue="Spring Boot.LeyouGatewayApplication" />
         <item itemvalue="JUnit.RedisTest.testRedis2" />
-        <item itemvalue="JUnit.RedisTest.testHash" />
-        <item itemvalue="JUnit.RedisTest.testRedis" />
-        <item itemvalue="Spring Boot.LeyouSearchApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +282,7 @@
       <workItem from="1581834295250" duration="4865000" />
       <workItem from="1581843954445" duration="596000" />
       <workItem from="1581860792747" duration="25644000" />
-      <workItem from="1582200262521" duration="92040000" />
+      <workItem from="1582200262521" duration="95372000" />
     </task>
     <servers />
   </component>
@@ -305,10 +298,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582179063622" />
-    <state x="552" y="178" width="907" height="683" key="#Project_Structure" timestamp="1582698085088">
+    <state x="128" y="334" width="907" height="683" key="#Project_Structure" timestamp="1582720155283">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" width="907" height="683" key="#Project_Structure/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582698085088" />
+    <state x="128" y="334" width="907" height="683" key="#Project_Structure/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582720155283" />
     <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1581323555603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -325,10 +318,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="301" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1580979764963" />
-    <state x="436" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1582598363691">
+    <state x="436" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1582719488685">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="436" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582598363691" />
+    <state x="436" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582719488685" />
     <state x="688" y="378" width="544" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582182624539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -353,45 +346,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="420" y="205" key="FileChooserDialogImpl/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582697566754" />
-    <state width="1548" height="202" key="GridCell.Tab.0.bottom" timestamp="1582700978236">
+    <state width="1877" height="196" key="GridCell.Tab.0.bottom" timestamp="1582721098310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="202" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582700978236" />
+    <state width="1877" height="196" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582721098310" />
     <state width="1578" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487185" />
-    <state width="1548" height="202" key="GridCell.Tab.0.center" timestamp="1582700978236">
+    <state width="1877" height="196" key="GridCell.Tab.0.center" timestamp="1582721098309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="202" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582700978236" />
+    <state width="1877" height="196" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582721098309" />
     <state width="1578" height="341" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487183" />
-    <state width="1548" height="202" key="GridCell.Tab.0.left" timestamp="1582700978235">
+    <state width="1877" height="196" key="GridCell.Tab.0.left" timestamp="1582721098309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="202" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582700978235" />
+    <state width="1877" height="196" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582721098309" />
     <state width="1578" height="341" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487182" />
-    <state width="1548" height="202" key="GridCell.Tab.0.right" timestamp="1582700978236">
+    <state width="1877" height="196" key="GridCell.Tab.0.right" timestamp="1582721098310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="202" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582700978236" />
+    <state width="1877" height="196" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582721098310" />
     <state width="1578" height="341" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487184" />
-    <state width="1548" height="202" key="GridCell.Tab.1.bottom" timestamp="1582700978236">
+    <state width="1548" height="202" key="GridCell.Tab.1.bottom" timestamp="1582719952199">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="202" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582700978236" />
+    <state width="1548" height="202" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582719952199" />
     <state width="1298" height="288" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203418530" />
-    <state width="1548" height="202" key="GridCell.Tab.1.center" timestamp="1582700978236">
+    <state width="1548" height="202" key="GridCell.Tab.1.center" timestamp="1582719952199">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="202" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582700978236" />
+    <state width="1548" height="202" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582719952199" />
     <state width="1298" height="288" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203418530" />
-    <state width="1548" height="202" key="GridCell.Tab.1.left" timestamp="1582700978236">
+    <state width="1548" height="202" key="GridCell.Tab.1.left" timestamp="1582719952199">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="202" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582700978236" />
+    <state width="1548" height="202" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582719952199" />
     <state width="1298" height="288" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203418530" />
-    <state width="1548" height="202" key="GridCell.Tab.1.right" timestamp="1582700978236">
+    <state width="1548" height="202" key="GridCell.Tab.1.right" timestamp="1582719952199">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="202" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582700978236" />
+    <state width="1548" height="202" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582719952199" />
     <state width="1298" height="288" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203418530" />
     <state width="1548" height="202" key="GridCell.Tab.2.bottom" timestamp="1582695945902">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -413,10 +406,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="413" y="158" key="Maven.ArtifactSearchDialog/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582693141113" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1582619807765">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1582720131436">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582619807765" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582720131436" />
     <state x="348" y="101" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582552567879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -433,10 +426,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="567" y="70" width="786" height="900" key="find.popup/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582618817384" />
-    <state x="719" y="190" width="874" height="598" key="new project wizard" timestamp="1582615634807">
+    <state x="719" y="190" width="874" height="598" key="new project wizard" timestamp="1582719156550">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="719" y="190" width="874" height="598" key="new project wizard/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582615634807" />
+    <state x="719" y="190" width="874" height="598" key="new project wizard/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582719156550" />
     <state x="636" y="366" width="716" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1581839780452">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
