@@ -1,0 +1,45 @@
+
+
+1.无状态登陆
+	在服务器端保存session
+	无状态不需要session，把登陆状态保存在cookie中
+
+2.jwt+rsa
+	token：登陆时，jwt oath2 
+	jwt：头信息（jwt） 载荷（用户信息，签发人 签发时间 有效时间） 签名（头信息+载荷：通过加密算法生成。作用：校验前两部分内容的合法性）
+
+3.zuul网关访问的流程
+	
+
+4.搭建授权中心
+	聚合工程：leyou-auth-common(jwt相关的工具类) leyou-auth-service(微服务)
+
+5.jwtUtils
+	根据载荷还有私钥生成jwt类型的token
+	根据公钥解析jwt类型的token，获取载荷信息（userInfo）
+	rsaUtils（生成公钥和私钥文件，并且读取公钥和私钥文件返回公钥和私钥对象）
+
+6.登陆功能
+	1.调用user-service中的queryUser接口，验证用户是否正确
+	2.判断返回的用户信息是否为空
+	3.生成jwt类型的token
+	4.token信息设置到cookie中
+
+7.首页用户名回显
+	1.获取Cookie中jwt类型的token @CookieValue("LY_TOKEN")
+	2.jwtUtils解析jwt，获取用户信息
+		判断用户是否为空
+	3.刷新jwt时间 cookie时间
+	4.响应用户信息
+
+8.在zuul网关添加过滤器
+	获取zuul的上下文对象
+	获取request
+	通过cookieutils获取token
+	解析token
+	
+	白名单；
+	
+	
+	
+	
