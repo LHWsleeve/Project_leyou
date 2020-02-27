@@ -36,4 +36,14 @@ public class AuthService {
         }
         return null;
     }
+
+    public UserInfo verift(String token) {
+        try {
+            //使用公钥解析jwt获取用户信息
+            return  JwtUtils.getInfoFromToken(token,this.jwtProperties.getPublicKey());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
