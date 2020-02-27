@@ -15,4 +15,5 @@ code/leyou/leyou-goods-web/target/*
 tools/nginx-1.16.1/html/item/*
 *.class
 code/demo/itcast-rabbitmq/target/*
-code/leyou/leyou-user/leyou-user-service/target/classes/application.yml
+code/leyou/leyou-user/leyou-user-service/target/*
+code/leyou/leyou-gateway/target/*
