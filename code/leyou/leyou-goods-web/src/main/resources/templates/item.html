@@ -663,9 +663,6 @@
 			addCart(){
 				ly.verify().then(res => {
 					// 登陆状态下的购物车
-					ly.http.post("/cart", {skuId: this.sku.id, num: this.num}).then(res => {
-						window.location = "http://www.leyou.com/cart.html";
-					});
 				}).catch(()=>{
 					// 未登录状态的购物车
 					// 查询已有的购物车
@@ -676,14 +673,15 @@
 					if(cart){
 						cart.num = cart.num + this.num;
 					} else {
-						carts.push({
+						cart={
 							skuId: this.sku.id,
 							title: this.sku.title,
 							image: this.images ? this.images[0] : "",
 							price: this.sku.price,
 							num: this.num,
 							ownSpec: this.sku.ownSpec
-						})
+						};
+						carts.push(cart);
 					}
 					ly.store.set("LY_CART", carts);
 
