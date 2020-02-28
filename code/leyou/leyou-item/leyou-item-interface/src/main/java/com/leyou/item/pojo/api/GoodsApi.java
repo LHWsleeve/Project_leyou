@@ -5,6 +5,7 @@ import com.leyou.item.pojo.Sku;
 import com.leyou.item.pojo.Spu;
 import com.leyou.item.pojo.SpuDetail;
 import com.leyou.item.pojo.bo.SpuBo;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,4 +30,6 @@ public interface GoodsApi {
 
     @GetMapping("{spuId}")
     public Spu querySpuById(@PathVariable("spuId")Long spuId);
+    @GetMapping("/sku/{skuId}")
+    public Sku querSkuById(@PathVariable("skuId")Long skuId);
 }

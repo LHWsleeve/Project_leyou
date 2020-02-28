@@ -663,6 +663,10 @@
 			addCart(){
 				ly.verify().then(res => {
 					// 登陆状态下的购物车
+					ly.http.post("/cart",{skuId: this.skuId, num:this.num}).then(res=>{
+						// 跳转到购物车页面
+						window.location = "http://www.leyou.com/cart.html";
+					});
 				}).catch(()=>{
 					// 未登录状态的购物车
 					// 查询已有的购物车

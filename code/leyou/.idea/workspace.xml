@@ -97,7 +97,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JwtTest.testParseToken">
+  <component name="RunManager" selected="Spring Boot.LeyouCartApplication">
     <configuration name="JwtTest.testGenerateToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leyou-auth-service" />
       <option name="PACKAGE_NAME" value="" />
@@ -147,6 +147,13 @@
     <configuration name="LeyouAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="leyou-auth-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.LeyouAuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeyouCartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="leyou-cart" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.LeyouCartApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -227,6 +234,7 @@
       <item itemvalue="Spring Boot.LeyouGoodsApplication" />
       <item itemvalue="Spring Boot.LeyouSearchApplication" />
       <item itemvalue="Spring Boot.LeyouGatewayApplication" />
+      <item itemvalue="Spring Boot.LeyouCartApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -253,6 +261,11 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Failed" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -291,7 +304,7 @@
       <workItem from="1581834295250" duration="4865000" />
       <workItem from="1581843954445" duration="596000" />
       <workItem from="1581860792747" duration="25644000" />
-      <workItem from="1582200262521" duration="120920000" />
+      <workItem from="1582200262521" duration="125147000" />
     </task>
     <servers />
   </component>
@@ -355,45 +368,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="420" y="205" key="FileChooserDialogImpl/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582697566754" />
-    <state width="1548" height="261" key="GridCell.Tab.0.bottom" timestamp="1582814671826">
+    <state width="1548" height="222" key="GridCell.Tab.0.bottom" timestamp="1582875593103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582814671826" />
+    <state width="1548" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582875593103" />
     <state width="1578" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487185" />
-    <state width="1548" height="261" key="GridCell.Tab.0.center" timestamp="1582814671826">
+    <state width="1548" height="222" key="GridCell.Tab.0.center" timestamp="1582875593102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="261" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582814671826" />
+    <state width="1548" height="222" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582875593102" />
     <state width="1578" height="341" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487183" />
-    <state width="1548" height="261" key="GridCell.Tab.0.left" timestamp="1582814671826">
+    <state width="1548" height="222" key="GridCell.Tab.0.left" timestamp="1582875593102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="261" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582814671826" />
+    <state width="1548" height="222" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582875593102" />
     <state width="1578" height="341" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487182" />
-    <state width="1548" height="261" key="GridCell.Tab.0.right" timestamp="1582814671826">
+    <state width="1548" height="222" key="GridCell.Tab.0.right" timestamp="1582875593102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="261" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582814671826" />
+    <state width="1548" height="222" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582875593102" />
     <state width="1578" height="341" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203487184" />
-    <state width="1548" height="261" key="GridCell.Tab.1.bottom" timestamp="1582814671827">
+    <state width="1548" height="222" key="GridCell.Tab.1.bottom" timestamp="1582875593103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="261" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582814671827" />
+    <state width="1548" height="222" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582875593103" />
     <state width="1298" height="288" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203418530" />
-    <state width="1548" height="261" key="GridCell.Tab.1.center" timestamp="1582814671827">
+    <state width="1548" height="222" key="GridCell.Tab.1.center" timestamp="1582875593103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="261" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582814671827" />
+    <state width="1548" height="222" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582875593103" />
     <state width="1298" height="288" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203418530" />
-    <state width="1548" height="261" key="GridCell.Tab.1.left" timestamp="1582814671826">
+    <state width="1548" height="222" key="GridCell.Tab.1.left" timestamp="1582875593103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="261" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582814671826" />
+    <state width="1548" height="222" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582875593103" />
     <state width="1298" height="288" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203418530" />
-    <state width="1548" height="261" key="GridCell.Tab.1.right" timestamp="1582814671827">
+    <state width="1548" height="222" key="GridCell.Tab.1.right" timestamp="1582875593103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1548" height="261" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582814671827" />
+    <state width="1548" height="222" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582875593103" />
     <state width="1298" height="288" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-360.2048.1112@1920.-360.2048.1112" timestamp="1582203418530" />
     <state width="1548" height="202" key="GridCell.Tab.2.bottom" timestamp="1582722283443">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -431,10 +444,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="273" key="extract.method.dialog/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582552626629" />
-    <state x="567" y="70" width="832" height="900" key="find.popup" timestamp="1582867695998">
+    <state x="567" y="70" width="832" height="900" key="find.popup" timestamp="1582875113800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="70" width="832" height="900" key="find.popup/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582867695998" />
+    <state x="567" y="70" width="832" height="900" key="find.popup/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582875113800" />
     <state x="719" y="190" width="874" height="598" key="new project wizard" timestamp="1582812244713">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -447,10 +460,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582637733356" />
-    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1582375930408">
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1582874448130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582375930408" />
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-360.2048.1112@0.0.1920.1040" timestamp="1582874448130" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

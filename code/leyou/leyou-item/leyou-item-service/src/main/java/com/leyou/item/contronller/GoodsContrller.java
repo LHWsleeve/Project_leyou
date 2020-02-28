@@ -100,4 +100,15 @@ public class GoodsContrller {
         }
         return ResponseEntity.ok(spu);
     }
+
+    @GetMapping("/sku/{skuId}")
+    public  ResponseEntity<Sku> querSkuById(@PathVariable("skuId")Long skuId){
+        Sku sku = this.goodsService.querySkuById(skuId);
+        if (sku==null){
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(sku);
+    }
+
+
 }
