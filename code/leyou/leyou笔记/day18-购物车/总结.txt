@@ -1,0 +1,35 @@
+
+
+1.nginx
+	proxy_set_header Host $host;
+2.zuul网关
+  add-host-header: true
+  sensitiveHeaders: # 设置敏感头信息为null
+
+  skuId
+  image
+  skuTitle
+  ownSpec
+  price
+  num
+  
+<input type="checkbox" value="java" v-model="language">
+<input type="checkbox" value="php" v-model="language">
+<input type="checkbox" value="ios" v-model="language">
+
+
+1.jwt登陆校验接口
+
+2.解决cookie写入问题
+	Release SR2
+
+3.首页用户名显示
+	1.jwtUtils解析token
+	2.刷新有效时间
+
+4.zuul网关统一校验用户
+	自定义过滤器继承ZuulFilter
+	添加白名单
+
+5.购物车，未登录状态购物车
+	加入购物车 查询购物车 修改数量 删除购物车 勾选购物车
