@@ -4,7 +4,7 @@ import com.leyou.auth.pojo.UserInfo;
 import com.leyou.cart.client.GoodClient;
 import com.leyou.cart.interceptor.LoginInterceptor;
 import com.leyou.cart.pojo.Cart;
-import com.leyou.common.pojo.utils.JsonUtils;
+import com.leyou.common.utils.JsonUtils;
 import com.leyou.item.pojo.Sku;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,9 +12,7 @@ import org.springframework.data.redis.core.BoundHashOperations;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
-import java.time.temporal.JulianFields;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 @Service

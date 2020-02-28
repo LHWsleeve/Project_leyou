@@ -1,6 +1,6 @@
 package com.leyou.item.contronller;
 
-import com.leyou.common.pojo.PageResult;
+import com.leyou.common.PageResult;
 import com.leyou.item.pojo.Brand;
 import com.leyou.item.service.BrandService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.*;
 
-import javax.swing.*;
 import java.util.List;
 
 @Controller

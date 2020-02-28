@@ -2,7 +2,7 @@ package com.leyou.item.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.leyou.common.pojo.PageResult;
+import com.leyou.common.PageResult;
 import com.leyou.item.mapper.*;
 import com.leyou.item.pojo.*;
 import com.leyou.item.pojo.bo.SpuBo;
@@ -11,12 +11,8 @@ import org.springframework.amqp.AmqpException;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.Arrays;

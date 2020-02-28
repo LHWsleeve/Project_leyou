@@ -1,11 +1,10 @@
 package com.leyou.auth.controller;
 
-import ch.qos.logback.core.pattern.util.RegularEscapeUtil;
 import com.leyou.auth.config.JwtProperties;
 import com.leyou.auth.pojo.UserInfo;
 import com.leyou.auth.service.AuthService;
 import com.leyou.auth.utils.JwtUtils;
-import com.leyou.common.pojo.utils.CookieUtils;
+import com.leyou.common.utils.CookieUtils;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

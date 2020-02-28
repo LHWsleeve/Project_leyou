@@ -2,12 +2,11 @@ package com.leyou.item.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.leyou.common.pojo.PageResult;
+import com.leyou.common.PageResult;
 import com.leyou.item.mapper.BrandMapper;
 import com.leyou.item.pojo.Brand;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;

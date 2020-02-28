@@ -1,7 +1,6 @@
 package com.leyou.search.client;
 
-import com.leyou.common.pojo.PageResult;
-import com.leyou.item.pojo.Spu;
+import com.leyou.common.PageResult;
 import com.leyou.item.pojo.bo.SpuBo;
 import com.leyou.search.GoodsRepository;
 import com.leyou.search.pojo.Goods;

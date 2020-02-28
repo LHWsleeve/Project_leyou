@@ -1,6 +1,6 @@
 package com.leyou.user.service;
 
-import com.leyou.common.pojo.utils.NumberUtils;
+import com.leyou.common.utils.NumberUtils;
 import com.leyou.user.mapper.UserMapper;
 import com.leyou.user.pojo.User;
 import com.leyou.user.utils.CodecUtils;

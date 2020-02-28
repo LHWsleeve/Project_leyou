@@ -17,3 +17,4 @@ tools/nginx-1.16.1/html/item/*
 code/demo/itcast-rabbitmq/target/*
 code/leyou/leyou-user/leyou-user-service/target/*
 code/leyou/leyou-gateway/target/*
+code/leyou/leyou-common/target/**

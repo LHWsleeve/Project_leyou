@@ -1,7 +1,7 @@
 package comleyou.gateway.filter;
 
 import com.leyou.auth.utils.JwtUtils;
-import com.leyou.common.pojo.utils.CookieUtils;
+import com.leyou.common.utils.CookieUtils;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;

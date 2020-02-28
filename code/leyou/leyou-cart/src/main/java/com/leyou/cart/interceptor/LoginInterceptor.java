@@ -3,16 +3,12 @@ package com.leyou.cart.interceptor;
 import com.leyou.auth.pojo.UserInfo;
 import com.leyou.auth.utils.JwtUtils;
 import com.leyou.cart.config.JwtProperties;
-import com.leyou.common.pojo.utils.CookieUtils;
-import org.apache.commons.lang.StringUtils;
+import com.leyou.common.utils.CookieUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.jta.JtaAfterCompletionSynchronization;
-import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 @Component

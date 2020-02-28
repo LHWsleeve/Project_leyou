@@ -1,13 +1,11 @@
 package com.leyou.item.contronller;
 
-import com.leyou.common.pojo.PageResult;
+import com.leyou.common.PageResult;
 import com.leyou.item.pojo.Sku;
 import com.leyou.item.pojo.Spu;
 import com.leyou.item.pojo.SpuDetail;
 import com.leyou.item.pojo.bo.SpuBo;
 import com.leyou.item.service.GoodsService;
-import org.apache.ibatis.annotations.Param;
-import org.omg.CORBA.PUBLIC_MEMBER;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
