@@ -18,7 +18,7 @@ zuul:
   sensitive-headers: # 覆盖敏感头信息，使cookie可以正常写入。不会被忽略
 leyou:
   jwt:
-    pubKeyPath: C:\\tmp\\rsa\\rsa.pub # 公钥地址
+    pubKeyPath: C:\Users\liuha\Documents\GitHub\Project_leyou\\tmp\\rsa\\rsa.pub # 公钥地址
     cookieName: "LY_TOKEN"
   filter:
     allowPaths: # 白名单，允许访问的路径

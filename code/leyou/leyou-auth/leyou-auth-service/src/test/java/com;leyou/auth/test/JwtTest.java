@@ -12,9 +12,9 @@ import java.security.PublicKey;
 
 public class JwtTest {
 
-    private static final String pubKeyPath = "C:\\tmp\\rsa\\rsa.pub";
+    private static final String pubKeyPath = "C:\\Users\\liuha\\Documents\\GitHub\\Project_leyou\\tmp\\rsa\\rsa.pub";
 
-    private static final String priKeyPath = "C:\\tmp\\rsa\\rsa.pri";
+    private static final String priKeyPath = "C:\\Users\\liuha\\Documents\\GitHub\\Project_leyou\\tmp\\rsa\\rsa.pri";
 
     private PublicKey publicKey;
 
