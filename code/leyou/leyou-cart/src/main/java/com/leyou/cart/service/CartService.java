@@ -14,6 +14,8 @@ import org.springframework.stereotype.Service;
 
 import java.time.temporal.JulianFields;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 @Service
 public class CartService {
@@ -49,6 +51,21 @@ public class CartService {
         hashOperations.put(skuId, JsonUtils.serialize(cart));
 
 
+
+    }
+
+    public List<Cart> queryCarts() {
+        //获取用户信息
+        UserInfo userInfo = LoginInterceptor.get();
+        //判断hash操作对象是否存在
+       if (!this.redisTemplate.hasKey(userInfo.getId().toString())){
+           return  null;
+       }
+
+        //先查询
+        BoundHashOperations<String, Object, Object> hashOperations = redisTemplate.boundHashOps(userInfo.getId().toString());
+       List<Object> cartJsons = hashOperations.values();
+       return cartJsons.stream().map(cartJson-> JsonUtils.parse(cartJson.toString(), Cart.class)).collect(Collectors.toList());
 
     }
 }
