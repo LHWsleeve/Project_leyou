@@ -14,6 +14,7 @@ zuul:
     user-service: /user/**
     auth-service: /auth/**
     cart-service: /cart/**
+    order-service: /order/**
   add-host-header: true #通过头信息把域名一起转发
   sensitive-headers: # 覆盖敏感头信息，使cookie可以正常写入。不会被忽略
 leyou:
